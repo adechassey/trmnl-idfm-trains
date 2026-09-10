@@ -31,14 +31,14 @@
           <td><span class="label">{{ r[2] }}</span></td>
           <td class="w--12"><span class="label label--small label--filled">{{ r[3] }}</span></td>
           <td><span class="label label--small lg:label--base">{{ r[10] }}</span></td>
-          {%- if has_mission -%}<td class="portrait:hidden"><span class="label label--small">{{ r[5] }}</span></td>{%- endif -%}
-          {%- if has_platform -%}<td class="w--20"><span class="label label--small">{{ r[6] }}</span></td>{%- endif -%}
+          {%- if has_mission -%}<td class="portrait:hidden"><span class="label label--small lg:label--base">{{ r[5] }}</span></td>{%- endif -%}
+          {%- if has_platform -%}<td class="w--20"><span class="label label--small lg:label--base">{{ r[6] }}</span></td>{%- endif -%}
           <td>
             {%- case r[8] -%}
-              {%- when "cancelled" -%}<span class="label label--small label--filled">{{ t_cancelled }}</span>
-              {%- when "delayed" -%}<span class="label label--small label--filled">+{{ r[7] }} min</span>
-              {%- when "atstop" -%}<span class="label label--small">{{ t_at_platform }}</span>
-              {%- else -%}<span class="label label--small">{{ t_on_time }}</span>
+              {%- when "cancelled" -%}<span class="label label--small label--filled lg:label--base">{{ t_cancelled }}</span>
+              {%- when "delayed" -%}<span class="label label--small label--filled lg:label--base">+{{ r[7] }} min</span>
+              {%- when "atstop" -%}<span class="label label--small lg:label--base">{{ t_at_platform }}</span>
+              {%- else -%}<span class="label label--small lg:label--base">{{ t_on_time }}</span>
             {%- endcase -%}
           </td>
         </tr>
