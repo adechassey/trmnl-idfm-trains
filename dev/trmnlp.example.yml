@@ -1,0 +1,22 @@
+# Local preview server config (trmnlp). Not uploaded to TRMNL.
+# Copied to ./.trmnlp.yml by bin/dev (git-ignored file: it may hold the API key).
+---
+watch:
+  - .trmnlp.yml
+  - src
+
+# Time zone injected into trmnl.user (utc_offset, time_zone_iana)
+time_zone: Europe/Paris
+
+# Plugin field values (defined in src/settings.yml)
+custom_fields:
+  api_key: "{{ env.PRIM_API_KEY }}"
+  stop_area_id: "58774"
+  station_name: ""
+  lines: ""
+  destinations: ""
+  max_trains: "8"
+  language: "auto"
+
+variables:
+  trmnl: {}

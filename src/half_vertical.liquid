@@ -1,0 +1,59 @@
+{%- comment -%}
+  Vertical half (400x480): 4 fixed-width columns, 8 trains max.
+  In portrait the half is only 240 px wide: the Info column is hidden and the time cell alone
+  signals delays (inverted time) and cancellations (short "cancelled" label). In landscape the
+  Info column says "Cancelled" and the time cell shows the inverted scheduled time.
+{%- endcomment -%}
+{%- assign n = max_trains -%}
+{%- if n > 8 -%}{%- assign n = 8 -%}{%- endif -%}
+{%- comment -%} Cap at 8 rows, the most this layout can show; data-table-limit still hides any overflow {%- endcomment -%}
+{%- if error != "" or rows.size == 0 -%}{%- assign layout_mods = "layout--center" -%}{%- else -%}{%- assign layout_mods = "layout--top layout--stretch-x" -%}{%- endif -%}
+<div class="layout layout--col {{ layout_mods }}">
+{%- if error != "" -%}
+  <span class="title title--small">{{ t_unavailable }}</span>
+  <span class="label label--small">{{ error }}</span>
+{%- elsif rows.size == 0 -%}
+  <span class="title title--small">{{ t_no_trains }}</span>
+{%- else -%}
+  <table class="table table--small" data-table-limit="true">
+    <thead>
+      <tr>
+        <th class="w--16"><span class="title title--small">{{ t_time }}</span></th>
+        <th class="w--10"></th>
+        <th><span class="title title--small">{{ t_destination }}</span></th>
+        <th class="w--24 portrait:hidden"><span class="title title--small">{{ t_info }}</span></th>
+      </tr>
+    </thead>
+    <tbody>
+      {%- for row in rows limit: n -%}
+        {%- assign r = row | split: "|" -%}
+        <tr>
+          <td class="w--16">
+            {%- if r[8] == "cancelled" -%}
+              <span class="label label--filled portrait:hidden">{{ r[2] }}</span>
+              <span class="label label--filled hidden portrait:inline">{{ t_cancelled_short }}</span>
+            {%- elsif r[8] == "delayed" -%}
+              <span class="label label--filled">{{ r[2] }}</span>
+            {%- else -%}
+              <span class="label">{{ r[2] }}</span>
+            {%- endif -%}
+          </td>
+          <td class="w--10"><span class="label label--small label--filled">{{ r[3] }}</span></td>
+          <td><span class="label label--small lg:label--base">{{ r[10] }}</span></td>
+          <td class="w--24 portrait:hidden">
+            {%- case r[8] -%}
+              {%- when "cancelled" -%}<span class="label label--small label--filled">{{ t_cancelled }}</span>
+              {%- when "delayed" -%}<span class="label label--small label--filled">+{{ r[7] }} min</span>
+              {%- when "atstop" -%}<span class="label label--small">{{ t_at_platform }}</span>
+              {%- else -%}
+                {%- if r[6] != blank -%}<span class="label label--small">{{ t_platform_n }} {{ r[6] }}</span>{%- else -%}<span class="label label--small">{{ t_on_time }}</span>{%- endif -%}
+            {%- endcase -%}
+          </td>
+        </tr>
+      {%- endfor -%}
+    </tbody>
+  </table>
+{%- endif -%}
+</div>
+
+{% render 'title_bar', title: station_title, instance: now_local %}

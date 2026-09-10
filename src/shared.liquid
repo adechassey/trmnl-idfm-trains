@@ -1,0 +1,142 @@
+{%- comment -%}
+  Île-de-France Next Trains: data preparation.
+
+  TRMNL prepends this file to every layout. It defines the shared `title_bar` template
+  and the Liquid variables used by full / half_* / quadrant:
+    - error          : error message ("" when everything is fine)
+    - rows           : upcoming trains (already sorted by transform.py), one string per train:
+                       "epoch|wait_min|time|line|destination|mission|platform|delay_min|status|length|short_destination"
+                       (Liquid cannot build arrays of objects, so we serialise; the wait in
+                       minutes is not displayed: the screen stays frozen until the next refresh,
+                       only the time stays right)
+    - has_mission    : at least one train has a mission code (SNCF Transilien / RER)
+    - has_platform   : at least one train has a known platform
+    - has_length     : at least one train has a known length (long / short)
+    - station_title  : screen title
+    - now_local      : render time in the user's time zone
+    - max_trains     : number of trains requested by the user
+    - lang, t_*      : on-screen language (en / fr) and the translated labels
+
+  Data comes from the Serverless function src/transform.py, which parses the PRIM response
+  fetched by the polling URL (Île-de-France Mobilités, SIRI Lite) and returns `trains`
+  (already sorted and filtered by the lines / destinations fields), `station` and `error`.
+  Here we only keep upcoming trains and format them.
+{%- endcomment -%}
+
+
+{%- comment -%} Shared title bar; the closing tag must be written exactly {% endtemplate %} {%- endcomment -%}
+{% template title_bar %}
+<div class="title_bar">
+  <span class="title">{{ title }}</span>
+  <span class="instance">{{ instance }}</span>
+</div>
+{% endtemplate %}
+
+{%- assign cf = trmnl.plugin_settings.custom_fields_values -%}
+
+{%- comment -%} Render clock (UTC seconds) and local time {%- endcomment -%}
+{%- assign now_ts = trmnl.system.timestamp_utc -%}
+{%- if now_ts == blank -%}{%- assign now_ts = "now" | date: "%s" -%}{%- endif -%}
+{%- assign now_ts = now_ts | plus: 0 -%}
+{%- assign utc_offset = trmnl.user.utc_offset | default: 0 | plus: 0 -%}
+{%- assign now_local = now_ts | plus: utc_offset | date: "%H:%M" -%}
+{%- comment -%}
+  Trains are dropped once their departure is more than 60 s in the past: PRIM keeps a train
+  in the list for a short while after it left, and a 60 s grace period also absorbs clock
+  differences between PRIM and the render time.
+{%- endcomment -%}
+{%- assign horizon = now_ts | minus: 60 -%}
+
+{%- assign max_trains = cf.max_trains | default: 8 | plus: 0 -%}
+{%- if max_trains < 1 -%}{%- assign max_trains = 8 -%}{%- endif -%}
+
+{%- comment -%}
+  On-screen language: the `language` field (auto / en / fr). "auto" follows the TRMNL
+  account locale (trmnl.user.locale). Every label used by the layouts is a t_* variable;
+  add a language by adding a branch here. Error messages from transform.py stay in English.
+{%- endcomment -%}
+{%- assign lang = cf.language | default: "auto" | downcase -%}
+{%- if lang == "auto" or lang == "" -%}
+  {%- assign lang = trmnl.user.locale | default: "en" | downcase | slice: 0, 2 -%}
+{%- endif -%}
+{%- if lang == "fr" -%}
+  {%- assign t_time = "Heure" -%}
+  {%- assign t_line = "Ligne" -%}
+  {%- assign t_destination = "Destination" -%}
+  {%- assign t_mission = "Mission" -%}
+  {%- assign t_platform = "Voie" -%}
+  {%- assign t_train = "Train" -%}
+  {%- assign t_status = "Statut" -%}
+  {%- assign t_info = "Info" -%}
+  {%- assign t_on_time = "À l'heure" -%}
+  {%- assign t_cancelled = "Supprimé" -%}
+  {%- assign t_cancelled_short = "Supp." -%}
+  {%- assign t_at_platform = "À quai" -%}
+  {%- assign t_platform_n = "Voie" -%}
+  {%- assign t_long = "long" -%}
+  {%- assign t_short = "court" -%}
+  {%- assign t_updated = "Mis à jour" -%}
+  {%- assign t_unavailable = "Données indisponibles" -%}
+  {%- assign t_no_trains = "Aucun train à venir" -%}
+  {%- assign t_no_departures = "Aucun passage annoncé pour le moment" -%}
+  {%- assign t_next_trains = "Prochains trains" -%}
+  {%- assign t_no_data = "Pas de données : la fonction Serverless du plugin n'a pas répondu." -%}
+{%- else -%}
+  {%- assign lang = "en" -%}
+  {%- assign t_time = "Time" -%}
+  {%- assign t_line = "Line" -%}
+  {%- assign t_destination = "Destination" -%}
+  {%- assign t_mission = "Mission" -%}
+  {%- assign t_platform = "Platform" -%}
+  {%- assign t_train = "Train" -%}
+  {%- assign t_status = "Status" -%}
+  {%- assign t_info = "Info" -%}
+  {%- assign t_on_time = "On time" -%}
+  {%- assign t_cancelled = "Cancelled" -%}
+  {%- assign t_cancelled_short = "Canc." -%}
+  {%- assign t_at_platform = "At platform" -%}
+  {%- assign t_platform_n = "Platform" -%}
+  {%- assign t_long = "long" -%}
+  {%- assign t_short = "short" -%}
+  {%- assign t_updated = "Updated" -%}
+  {%- assign t_unavailable = "Data unavailable" -%}
+  {%- assign t_no_trains = "No upcoming trains" -%}
+  {%- assign t_no_departures = "No departures announced right now" -%}
+  {%- assign t_next_trains = "Next trains" -%}
+  {%- assign t_no_data = "No data: the plugin's Serverless function did not respond." -%}
+{%- endif -%}
+
+{%- comment -%} Serverless function output: `trains`, `station`, `error` {%- endcomment -%}
+{%- assign api_error = error | default: "" -%}
+{%- assign error = "" -%}
+{%- if trains == nil -%}
+  {%- assign error = t_no_data -%}
+{%- elsif api_error != "" and trains.size == 0 -%}
+  {%- assign error = api_error -%}
+{%- endif -%}
+
+{%- assign rows_raw = "" -%}
+{%- assign has_mission = false -%}
+{%- assign has_platform = false -%}
+{%- assign has_length = false -%}
+
+{%- for tr in trains -%}
+  {%- assign t_ts = tr.t | plus: 0 -%}
+  {%- if t_ts < horizon -%}{%- continue -%}{%- endif -%}
+  {%- assign wait = t_ts | minus: now_ts | divided_by: 60 -%}
+  {%- if wait < 0 -%}{%- assign wait = 0 -%}{%- endif -%}
+  {%- if tr.mission != blank -%}{%- assign has_mission = true -%}{%- endif -%}
+  {%- if tr.platform != blank -%}{%- assign has_platform = true -%}{%- endif -%}
+  {%- if tr.length != blank -%}{%- assign has_length = true -%}{%- endif -%}
+  {%- assign rows_raw = rows_raw | append: t_ts | append: "|" | append: wait | append: "|" | append: tr.hhmm | append: "|" | append: tr.line | append: "|" | append: tr.dest | append: "|" | append: tr.mission | append: "|" | append: tr.platform | append: "|" | append: tr.delay | append: "|" | append: tr.status | append: "|" | append: tr.length | append: "|" | append: tr.dest_short | append: ";;" -%}
+{%- endfor -%}
+
+{%- comment -%} transform.py returns trains sorted by time, so no Liquid sort is needed {%- endcomment -%}
+{%- assign rows = rows_raw | split: ";;" -%}
+
+{%- comment -%} Title: user field, else the name returned by the API {%- endcomment -%}
+{%- assign station_title = cf.station_name | default: "" | strip -%}
+{%- if station_title == "" -%}
+  {%- assign station_title = station | default: t_next_trains -%}
+{%- endif -%}
+{%- assign title_instance = t_updated | append: " " | append: now_local -%}

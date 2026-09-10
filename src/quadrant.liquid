@@ -1,0 +1,59 @@
+{%- comment -%}
+  Quadrant (400x240 on the OG, twice that on TRMNL X): the departure board reduced to the
+  essentials. The OG shows 4 rows; large screens (lg:) show up to 8 rows, bigger text and an
+  extra status column. Rows 5-8 and the status cells are hidden below the lg breakpoint.
+  Time cell: same size in every state; inverted = delayed or cancelled. Without an Info column
+  (OG) a cancelled train shows a short "cancelled" label instead of its time.
+{%- endcomment -%}
+{%- assign n = max_trains -%}
+{%- if n > 8 -%}{%- assign n = 8 -%}{%- endif -%}
+{%- if error != "" or rows.size == 0 -%}{%- assign layout_mods = "layout--center" -%}{%- else -%}{%- assign layout_mods = "layout--top layout--stretch-x" -%}{%- endif -%}
+<div class="layout layout--col {{ layout_mods }}">
+{%- if error != "" -%}
+  <span class="title title--small">{{ t_unavailable }}</span>
+{%- elsif rows.size == 0 -%}
+  <span class="title title--small">{{ t_no_trains }}</span>
+{%- else -%}
+  <table class="table table--small" data-table-limit="true">
+    <thead>
+      <tr>
+        <th class="w--14 lg:w--20"><span class="title title--small">{{ t_time }}</span></th>
+        <th class="w--10 lg:w--12"><span class="title title--small">{{ t_line }}</span></th>
+        <th><span class="title title--small">{{ t_destination }}</span></th>
+        <th class="hidden lg:table-cell"><span class="title title--small">{{ t_info }}</span></th>
+      </tr>
+    </thead>
+    <tbody>
+      {%- for row in rows limit: n -%}
+        {%- assign r = row | split: "|" -%}
+        {%- if forloop.index > 4 -%}{%- assign row_class = "hidden lg:table-row" -%}{%- else -%}{%- assign row_class = "" -%}{%- endif -%}
+        <tr class="{{ row_class }}">
+          <td class="w--14 lg:w--20">
+            {%- if r[8] == "cancelled" -%}
+              <span class="label label--small label--filled lg:hidden">{{ t_cancelled_short }}</span>
+              <span class="label label--filled hidden lg:inline lg:label--large">{{ r[2] }}</span>
+            {%- elsif r[8] == "delayed" -%}
+              <span class="label label--small label--filled lg:label--large">{{ r[2] }}</span>
+            {%- else -%}
+              <span class="label label--small lg:label--large">{{ r[2] }}</span>
+            {%- endif -%}
+          </td>
+          <td class="w--10 lg:w--12"><span class="label label--small label--filled lg:label--base">{{ r[3] }}</span></td>
+          <td><span class="label label--small lg:label--base">{{ r[10] }}</span></td>
+          <td class="hidden lg:table-cell">
+            {%- case r[8] -%}
+              {%- when "cancelled" -%}<span class="label label--small label--filled lg:label--base">{{ t_cancelled }}</span>
+              {%- when "delayed" -%}<span class="label label--small label--filled lg:label--base">+{{ r[7] }} min</span>
+              {%- when "atstop" -%}<span class="label label--small lg:label--base">{{ t_at_platform }}</span>
+              {%- else -%}
+                {%- if r[6] != blank -%}<span class="label label--small lg:label--base">{{ t_platform_n }} {{ r[6] }}</span>{%- else -%}<span class="label label--small lg:label--base">{{ t_on_time }}</span>{%- endif -%}
+            {%- endcase -%}
+          </td>
+        </tr>
+      {%- endfor -%}
+    </tbody>
+  </table>
+{%- endif -%}
+</div>
+
+{% render 'title_bar', title: station_title, instance: now_local %}

@@ -1,0 +1,2438 @@
+{
+ "Siri": {
+  "ServiceDelivery": {
+   "ResponseTimestamp": "2026-09-10T20:11:22.076Z",
+   "ProducerRef": "IVTR_HET",
+   "ResponseMessageIdentifier": "IVTR_HET:ResponseMessage:a167e33a-730f-426f-a0a9-e4a3f7815252:LOC:",
+   "StopMonitoringDelivery": [
+    {
+     "ResponseTimestamp": "2026-09-10T20:11:22.145Z",
+     "Version": "2.0",
+     "Status": "true",
+     "MonitoredStopVisit": [
+      {
+       "RecordedAtTime": "2026-09-10T19:48:43.061Z",
+       "ItemIdentifier": "SNCF_MAGENTA_PRD:Item::58774-33-fbe4484f-6b81-4c48-99e3-1ed5269f8245:",
+       "MonitoringRef": {
+        "value": "STIF:StopArea:SP:58774:"
+       },
+       "MonitoredVehicleJourney": {
+        "LineRef": {
+         "value": "STIF:Line::C01743:"
+        },
+        "OperatorRef": {},
+        "FramedVehicleJourneyRef": {
+         "DataFrameRef": {
+          "value": "any"
+         },
+         "DatedVehicleJourneyRef": "SNCF_MAGENTA_PRD:VehicleJourney::fbe4484f-6b81-4c48-99e3-1ed5269f8245:LOC"
+        },
+        "DirectionName": [],
+        "DestinationRef": {
+         "value": "STIF:StopArea:SP:58774:"
+        },
+        "DestinationName": [
+         {
+          "value": "Massy-Palaiseau"
+         }
+        ],
+        "VehicleJourneyName": [
+         {
+          "value": "KASE80"
+         }
+        ],
+        "JourneyNote": [
+         {
+          "value": "KASE"
+         }
+        ],
+        "MonitoredCall": {
+         "StopPointName": [
+          {
+           "value": "Massy-Palaiseau"
+          }
+         ],
+         "VehicleAtStop": false,
+         "DestinationDisplay": [
+          {
+           "value": "Massy-Palaiseau"
+          }
+         ],
+         "ArrivalStopAssignment": {
+          "ExpectedQuayRef": {
+           "value": "STIF:StopPoint:Q:474058:"
+          }
+         },
+         "ExpectedArrivalTime": "2026-09-10T19:46:42.000Z",
+         "DeparturePlatformName": {
+          "value": "A"
+         },
+         "DepartureStatus": "onTime",
+         "Order": 33,
+         "AimedArrivalTime": "2026-09-10T19:44:29.000Z",
+         "ArrivalPlatformName": {
+          "value": "A"
+         },
+         "ArrivalStatus": "onTime"
+        },
+        "TrainNumbers": {
+         "TrainNumberRef": [
+          {
+           "value": "KASE80"
+          }
+         ]
+        },
+        "VehicleFeatureRef": [
+         "longTrain"
+        ],
+        "DirectionRef": {
+         "value": "Aller"
+        }
+       }
+      },
+      {
+       "RecordedAtTime": "2026-09-10T19:59:21.330Z",
+       "ItemIdentifier": "SNCF_MAGENTA_PRD:Item::58774-33-00057645-363b-45aa-8c9c-224227fe61ea:",
+       "MonitoringRef": {
+        "value": "STIF:StopArea:SP:58774:"
+       },
+       "MonitoredVehicleJourney": {
+        "LineRef": {
+         "value": "STIF:Line::C01743:"
+        },
+        "OperatorRef": {},
+        "FramedVehicleJourneyRef": {
+         "DataFrameRef": {
+          "value": "any"
+         },
+         "DatedVehicleJourneyRef": "SNCF_MAGENTA_PRD:VehicleJourney::00057645-363b-45aa-8c9c-224227fe61ea:LOC"
+        },
+        "DirectionName": [],
+        "DestinationRef": {
+         "value": "STIF:StopArea:SP:58774:"
+        },
+        "DestinationName": [
+         {
+          "value": "Massy-Palaiseau"
+         }
+        ],
+        "VehicleJourneyName": [
+         {
+          "value": "KASE86"
+         }
+        ],
+        "JourneyNote": [
+         {
+          "value": "KASE"
+         }
+        ],
+        "MonitoredCall": {
+         "StopPointName": [
+          {
+           "value": "Massy-Palaiseau"
+          }
+         ],
+         "VehicleAtStop": false,
+         "DestinationDisplay": [
+          {
+           "value": "Massy-Palaiseau"
+          }
+         ],
+         "ArrivalStopAssignment": {
+          "ExpectedQuayRef": {
+           "value": "STIF:StopPoint:Q:474058:"
+          }
+         },
+         "ExpectedArrivalTime": "2026-09-10T20:00:31.000Z",
+         "DeparturePlatformName": {
+          "value": "A"
+         },
+         "DepartureStatus": "onTime",
+         "Order": 33,
+         "AimedArrivalTime": "2026-09-10T19:59:29.000Z",
+         "ArrivalPlatformName": {
+          "value": "A"
+         },
+         "ArrivalStatus": "onTime"
+        },
+        "TrainNumbers": {
+         "TrainNumberRef": [
+          {
+           "value": "KASE86"
+          }
+         ]
+        },
+        "VehicleFeatureRef": [
+         "longTrain"
+        ],
+        "DirectionRef": {
+         "value": "Aller"
+        }
+       }
+      },
+      {
+       "RecordedAtTime": "2026-09-10T19:38:40.829Z",
+       "ItemIdentifier": "SNCF_MAGENTA_PRD:Item::58774-31-be584fa0-5e3f-43e8-8e07-9e63f300d062:",
+       "MonitoringRef": {
+        "value": "STIF:StopArea:SP:58774:"
+       },
+       "MonitoredVehicleJourney": {
+        "LineRef": {
+         "value": "STIF:Line::C01743:"
+        },
+        "OperatorRef": {},
+        "FramedVehicleJourneyRef": {
+         "DataFrameRef": {
+          "value": "any"
+         },
+         "DatedVehicleJourneyRef": "SNCF_MAGENTA_PRD:VehicleJourney::be584fa0-5e3f-43e8-8e07-9e63f300d062:LOC"
+        },
+        "DirectionName": [],
+        "DestinationRef": {
+         "value": "STIF:StopArea:SP:473364:"
+        },
+        "DestinationName": [
+         {
+          "value": "Aéroport Charles de Gaulle 2 (Terminal 2)"
+         }
+        ],
+        "VehicleJourneyName": [
+         {
+          "value": "ETOU17"
+         }
+        ],
+        "JourneyNote": [
+         {
+          "value": "ETOU"
+         }
+        ],
+        "MonitoredCall": {
+         "StopPointName": [
+          {
+           "value": "Massy-Palaiseau"
+          }
+         ],
+         "VehicleAtStop": false,
+         "DestinationDisplay": [
+          {
+           "value": "Aéroport Charles de Gaulle 2 (Terminal 2)"
+          }
+         ],
+         "DepartureStopAssignment": {
+          "ExpectedQuayRef": {
+           "value": "STIF:StopPoint:Q:474056:"
+          }
+         },
+         "DeparturePlatformName": {
+          "value": "2"
+         },
+         "ExpectedDepartureTime": "2026-09-10T20:11:49.000Z",
+         "DepartureStatus": "onTime",
+         "Order": 31,
+         "ArrivalPlatformName": {
+          "value": "2"
+         },
+         "AimedDepartureTime": "2026-09-10T20:11:29.000Z",
+         "ArrivalStatus": "onTime"
+        },
+        "TrainNumbers": {
+         "TrainNumberRef": [
+          {
+           "value": "ETOU17"
+          }
+         ]
+        },
+        "VehicleFeatureRef": [
+         "longTrain"
+        ],
+        "DirectionRef": {
+         "value": "Retour"
+        }
+       }
+      },
+      {
+       "RecordedAtTime": "2026-09-10T20:10:24.081Z",
+       "ItemIdentifier": "SNCF_MAGENTA_PRD:Item::58774-33-e79c97a4-ef8e-497b-a019-8a8b678f6a09:",
+       "MonitoringRef": {
+        "value": "STIF:StopArea:SP:58774:"
+       },
+       "MonitoredVehicleJourney": {
+        "LineRef": {
+         "value": "STIF:Line::C01743:"
+        },
+        "OperatorRef": {},
+        "FramedVehicleJourneyRef": {
+         "DataFrameRef": {
+          "value": "any"
+         },
+         "DatedVehicleJourneyRef": "SNCF_MAGENTA_PRD:VehicleJourney::e79c97a4-ef8e-497b-a019-8a8b678f6a09:LOC"
+        },
+        "DirectionName": [],
+        "DestinationRef": {
+         "value": "STIF:StopArea:SP:47889:"
+        },
+        "DestinationName": [
+         {
+          "value": "Saint-Rémy-lès-Chevreuse"
+         }
+        ],
+        "VehicleJourneyName": [
+         {
+          "value": "PILE96"
+         }
+        ],
+        "JourneyNote": [
+         {
+          "value": "PILE"
+         }
+        ],
+        "MonitoredCall": {
+         "StopPointName": [
+          {
+           "value": "Massy-Palaiseau"
+          }
+         ],
+         "VehicleAtStop": false,
+         "DestinationDisplay": [
+          {
+           "value": "Saint-Rémy-lès-Chevreuse"
+          }
+         ],
+         "ArrivalStopAssignment": {
+          "ExpectedQuayRef": {
+           "value": "STIF:StopPoint:Q:474060:"
+          }
+         },
+         "DepartureStopAssignment": {
+          "ExpectedQuayRef": {
+           "value": "STIF:StopPoint:Q:474060:"
+          }
+         },
+         "ExpectedArrivalTime": "2026-09-10T20:18:15.000Z",
+         "DeparturePlatformName": {
+          "value": "1"
+         },
+         "ExpectedDepartureTime": "2026-09-10T20:18:35.000Z",
+         "DepartureStatus": "onTime",
+         "Order": 33,
+         "AimedArrivalTime": "2026-09-10T20:17:37.000Z",
+         "ArrivalPlatformName": {
+          "value": "1"
+         },
+         "AimedDepartureTime": "2026-09-10T20:18:17.000Z",
+         "ArrivalStatus": "onTime"
+        },
+        "TrainNumbers": {
+         "TrainNumberRef": [
+          {
+           "value": "PILE96"
+          }
+         ]
+        },
+        "VehicleFeatureRef": [
+         "longTrain"
+        ],
+        "DirectionRef": {
+         "value": "Aller"
+        }
+       }
+      },
+      {
+       "RecordedAtTime": "2026-09-10T20:08:43.437Z",
+       "ItemIdentifier": "SNCF_MAGENTA_PRD:Item::58774-33-68368bb0-b303-4eab-83c3-4548660c1c60:",
+       "MonitoringRef": {
+        "value": "STIF:StopArea:SP:58774:"
+       },
+       "MonitoredVehicleJourney": {
+        "LineRef": {
+         "value": "STIF:Line::C01743:"
+        },
+        "OperatorRef": {},
+        "FramedVehicleJourneyRef": {
+         "DataFrameRef": {
+          "value": "any"
+         },
+         "DatedVehicleJourneyRef": "SNCF_MAGENTA_PRD:VehicleJourney::68368bb0-b303-4eab-83c3-4548660c1c60:LOC"
+        },
+        "DirectionName": [],
+        "DestinationRef": {
+         "value": "STIF:StopArea:SP:58774:"
+        },
+        "DestinationName": [
+         {
+          "value": "Massy-Palaiseau"
+         }
+        ],
+        "VehicleJourneyName": [
+         {
+          "value": "KASE92"
+         }
+        ],
+        "JourneyNote": [
+         {
+          "value": "KASE"
+         }
+        ],
+        "MonitoredCall": {
+         "StopPointName": [
+          {
+           "value": "Massy-Palaiseau"
+          }
+         ],
+         "VehicleAtStop": false,
+         "DestinationDisplay": [
+          {
+           "value": "Massy-Palaiseau"
+          }
+         ],
+         "ArrivalStopAssignment": {
+          "ExpectedQuayRef": {
+           "value": "STIF:StopPoint:Q:474058:"
+          }
+         },
+         "ExpectedArrivalTime": "2026-09-10T20:19:18.000Z",
+         "DeparturePlatformName": {
+          "value": "A"
+         },
+         "DepartureStatus": "onTime",
+         "Order": 33,
+         "AimedArrivalTime": "2026-09-10T20:14:29.000Z",
+         "ArrivalPlatformName": {
+          "value": "A"
+         },
+         "ArrivalStatus": "onTime"
+        },
+        "TrainNumbers": {
+         "TrainNumberRef": [
+          {
+           "value": "KASE92"
+          }
+         ]
+        },
+        "VehicleFeatureRef": [
+         "longTrain"
+        ],
+        "DirectionRef": {
+         "value": "Aller"
+        }
+       }
+      },
+      {
+       "RecordedAtTime": "2026-09-10T20:06:22.591Z",
+       "ItemIdentifier": "SNCF_MAGENTA_PRD:Item::58774-14-98f1be46-9bdc-4f9f-bd43-8d377dacba05:",
+       "MonitoringRef": {
+        "value": "STIF:StopArea:SP:58774:"
+       },
+       "MonitoredVehicleJourney": {
+        "LineRef": {
+         "value": "STIF:Line::C01743:"
+        },
+        "OperatorRef": {},
+        "FramedVehicleJourneyRef": {
+         "DataFrameRef": {
+          "value": "any"
+         },
+         "DatedVehicleJourneyRef": "SNCF_MAGENTA_PRD:VehicleJourney::98f1be46-9bdc-4f9f-bd43-8d377dacba05:LOC"
+        },
+        "DirectionName": [],
+        "DestinationRef": {
+         "value": "STIF:StopArea:SP:473364:"
+        },
+        "DestinationName": [
+         {
+          "value": "Aéroport Charles de Gaulle 2 (Terminal 2)"
+         }
+        ],
+        "VehicleJourneyName": [
+         {
+          "value": "ENNE21"
+         }
+        ],
+        "JourneyNote": [
+         {
+          "value": "ENNE"
+         }
+        ],
+        "MonitoredCall": {
+         "StopPointName": [
+          {
+           "value": "Massy-Palaiseau"
+          }
+         ],
+         "VehicleAtStop": false,
+         "DestinationDisplay": [
+          {
+           "value": "Aéroport Charles de Gaulle 2 (Terminal 2)"
+          }
+         ],
+         "ArrivalStopAssignment": {
+          "ExpectedQuayRef": {
+           "value": "STIF:StopPoint:Q:474056:"
+          }
+         },
+         "DepartureStopAssignment": {
+          "ExpectedQuayRef": {
+           "value": "STIF:StopPoint:Q:474056:"
+          }
+         },
+         "ExpectedArrivalTime": "2026-09-10T20:24:58.000Z",
+         "DeparturePlatformName": {
+          "value": "2"
+         },
+         "ExpectedDepartureTime": "2026-09-10T20:25:18.000Z",
+         "DepartureStatus": "onTime",
+         "Order": 14,
+         "AimedArrivalTime": "2026-09-10T20:26:14.000Z",
+         "ArrivalPlatformName": {
+          "value": "2"
+         },
+         "AimedDepartureTime": "2026-09-10T20:27:04.000Z",
+         "ArrivalStatus": "onTime"
+        },
+        "TrainNumbers": {
+         "TrainNumberRef": [
+          {
+           "value": "ENNE21"
+          }
+         ]
+        },
+        "VehicleFeatureRef": [
+         "longTrain"
+        ],
+        "DirectionRef": {
+         "value": "Retour"
+        }
+       }
+      },
+      {
+       "RecordedAtTime": "2026-09-10T20:10:02.135Z",
+       "ItemIdentifier": "SNCF_MAGENTA_PRD:Item::58774-33-05691a77-458c-443e-a8a4-4cb0793eb13a:",
+       "MonitoringRef": {
+        "value": "STIF:StopArea:SP:58774:"
+       },
+       "MonitoredVehicleJourney": {
+        "LineRef": {
+         "value": "STIF:Line::C01743:"
+        },
+        "OperatorRef": {},
+        "FramedVehicleJourneyRef": {
+         "DataFrameRef": {
+          "value": "any"
+         },
+         "DatedVehicleJourneyRef": "SNCF_MAGENTA_PRD:VehicleJourney::05691a77-458c-443e-a8a4-4cb0793eb13a:LOC"
+        },
+        "DirectionName": [],
+        "DestinationRef": {
+         "value": "STIF:StopArea:SP:58774:"
+        },
+        "DestinationName": [
+         {
+          "value": "Massy-Palaiseau"
+         }
+        ],
+        "VehicleJourneyName": [
+         {
+          "value": "KASE98"
+         }
+        ],
+        "JourneyNote": [
+         {
+          "value": "KASE"
+         }
+        ],
+        "MonitoredCall": {
+         "StopPointName": [
+          {
+           "value": "Massy-Palaiseau"
+          }
+         ],
+         "VehicleAtStop": false,
+         "DestinationDisplay": [
+          {
+           "value": "Massy-Palaiseau"
+          }
+         ],
+         "ArrivalStopAssignment": {
+          "ExpectedQuayRef": {
+           "value": "STIF:StopPoint:Q:474058:"
+          }
+         },
+         "ExpectedArrivalTime": "2026-09-10T20:33:13.000Z",
+         "DeparturePlatformName": {
+          "value": "A"
+         },
+         "DepartureStatus": "onTime",
+         "Order": 33,
+         "AimedArrivalTime": "2026-09-10T20:29:29.000Z",
+         "ArrivalPlatformName": {
+          "value": "A"
+         },
+         "ArrivalStatus": "onTime"
+        },
+        "TrainNumbers": {
+         "TrainNumberRef": [
+          {
+           "value": "KASE98"
+          }
+         ]
+        },
+        "VehicleFeatureRef": [
+         "longTrain"
+        ],
+        "DirectionRef": {
+         "value": "Aller"
+        }
+       }
+      },
+      {
+       "RecordedAtTime": "2026-09-10T20:11:02.295Z",
+       "ItemIdentifier": "SNCF_MAGENTA_PRD:Item::58774-33-0482af7e-9258-47c4-bbf1-09fb9bc60510:",
+       "MonitoringRef": {
+        "value": "STIF:StopArea:SP:58774:"
+       },
+       "MonitoredVehicleJourney": {
+        "LineRef": {
+         "value": "STIF:Line::C01743:"
+        },
+        "OperatorRef": {},
+        "FramedVehicleJourneyRef": {
+         "DataFrameRef": {
+          "value": "any"
+         },
+         "DatedVehicleJourneyRef": "SNCF_MAGENTA_PRD:VehicleJourney::0482af7e-9258-47c4-bbf1-09fb9bc60510:LOC"
+        },
+        "DirectionName": [],
+        "DestinationRef": {
+         "value": "STIF:StopArea:SP:47889:"
+        },
+        "DestinationName": [
+         {
+          "value": "Saint-Rémy-lès-Chevreuse"
+         }
+        ],
+        "VehicleJourneyName": [
+         {
+          "value": "PIED04"
+         }
+        ],
+        "JourneyNote": [
+         {
+          "value": "PIED"
+         }
+        ],
+        "MonitoredCall": {
+         "StopPointName": [
+          {
+           "value": "Massy-Palaiseau"
+          }
+         ],
+         "VehicleAtStop": false,
+         "DestinationDisplay": [
+          {
+           "value": "Saint-Rémy-lès-Chevreuse"
+          }
+         ],
+         "ArrivalStopAssignment": {
+          "ExpectedQuayRef": {
+           "value": "STIF:StopPoint:Q:474060:"
+          }
+         },
+         "DepartureStopAssignment": {
+          "ExpectedQuayRef": {
+           "value": "STIF:StopPoint:Q:474060:"
+          }
+         },
+         "ExpectedArrivalTime": "2026-09-10T20:33:33.000Z",
+         "DeparturePlatformName": {
+          "value": "1"
+         },
+         "ExpectedDepartureTime": "2026-09-10T20:33:53.000Z",
+         "DepartureStatus": "onTime",
+         "Order": 33,
+         "AimedArrivalTime": "2026-09-10T20:32:37.000Z",
+         "ArrivalPlatformName": {
+          "value": "1"
+         },
+         "AimedDepartureTime": "2026-09-10T20:33:17.000Z",
+         "ArrivalStatus": "onTime"
+        },
+        "TrainNumbers": {
+         "TrainNumberRef": [
+          {
+           "value": "PIED04"
+          }
+         ]
+        },
+        "VehicleFeatureRef": [
+         "longTrain"
+        ],
+        "DirectionRef": {
+         "value": "Aller"
+        }
+       }
+      },
+      {
+       "RecordedAtTime": "2026-09-10T13:17:16.393Z",
+       "ItemIdentifier": "SNCF_MAGENTA_PRD:Item::58774-14-1a2c53fd-399e-4a35-9a6e-dedec2085bd2:",
+       "MonitoringRef": {
+        "value": "STIF:StopArea:SP:58774:"
+       },
+       "MonitoredVehicleJourney": {
+        "LineRef": {
+         "value": "STIF:Line::C02711:"
+        },
+        "OperatorRef": {},
+        "FramedVehicleJourneyRef": {
+         "DataFrameRef": {
+          "value": "any"
+         },
+         "DatedVehicleJourneyRef": "SNCF_MAGENTA_PRD:VehicleJourney::1a2c53fd-399e-4a35-9a6e-dedec2085bd2:LOC"
+        },
+        "DirectionName": [],
+        "DestinationRef": {
+         "value": "STIF:StopArea:SP:58774:"
+        },
+        "DestinationName": [
+         {
+          "value": "Massy-Palaiseau"
+         }
+        ],
+        "VehicleJourneyName": [
+         {
+          "value": "148696"
+         }
+        ],
+        "JourneyNote": [
+         {
+          "value": "MICK"
+         }
+        ],
+        "MonitoredCall": {
+         "StopPointName": [
+          {
+           "value": "Massy-Palaiseau"
+          }
+         ],
+         "VehicleAtStop": false,
+         "DestinationDisplay": [
+          {
+           "value": "Massy-Palaiseau"
+          }
+         ],
+         "ArrivalStopAssignment": {
+          "ExpectedQuayRef": {
+           "value": "STIF:StopPoint:Q:471608:"
+          }
+         },
+         "ExpectedArrivalTime": "2026-09-10T20:36:00.000Z",
+         "DeparturePlatformName": {
+          "value": "2"
+         },
+         "DepartureStatus": "onTime",
+         "Order": 14,
+         "AimedArrivalTime": "2026-09-10T20:36:00.000Z",
+         "ArrivalPlatformName": {
+          "value": "2"
+         },
+         "ArrivalStatus": "onTime"
+        },
+        "TrainNumbers": {
+         "TrainNumberRef": [
+          {
+           "value": "148696"
+          }
+         ]
+        },
+        "VehicleFeatureRef": [
+         "shortTrain"
+        ],
+        "DirectionRef": {
+         "value": "Aller"
+        }
+       }
+      },
+      {
+       "RecordedAtTime": "2026-09-10T02:25:06.592Z",
+       "ItemIdentifier": "SNCF_MAGENTA_PRD:Item::58774-31-a78da50e-50c8-4b5d-9c3e-e78045b77866:",
+       "MonitoringRef": {
+        "value": "STIF:StopArea:SP:58774:"
+       },
+       "MonitoredVehicleJourney": {
+        "LineRef": {
+         "value": "STIF:Line::C01743:"
+        },
+        "OperatorRef": {},
+        "FramedVehicleJourneyRef": {
+         "DataFrameRef": {
+          "value": "any"
+         },
+         "DatedVehicleJourneyRef": "SNCF_MAGENTA_PRD:VehicleJourney::a78da50e-50c8-4b5d-9c3e-e78045b77866:LOC"
+        },
+        "DirectionName": [],
+        "DestinationRef": {
+         "value": "STIF:StopArea:SP:473364:"
+        },
+        "DestinationName": [
+         {
+          "value": "Aéroport Charles de Gaulle 2 (Terminal 2)"
+         }
+        ],
+        "VehicleJourneyName": [
+         {
+          "value": "ETOU25"
+         }
+        ],
+        "JourneyNote": [
+         {
+          "value": "ETOU"
+         }
+        ],
+        "MonitoredCall": {
+         "StopPointName": [
+          {
+           "value": "Massy-Palaiseau"
+          }
+         ],
+         "VehicleAtStop": false,
+         "DestinationDisplay": [
+          {
+           "value": "Aéroport Charles de Gaulle 2 (Terminal 2)"
+          }
+         ],
+         "DepartureStopAssignment": {
+          "ExpectedQuayRef": {
+           "value": "STIF:StopPoint:Q:474061:"
+          }
+         },
+         "DeparturePlatformName": {
+          "value": "B"
+         },
+         "ExpectedDepartureTime": "2026-09-10T20:41:29.000Z",
+         "DepartureStatus": "onTime",
+         "Order": 31,
+         "ArrivalPlatformName": {
+          "value": "B"
+         },
+         "AimedDepartureTime": "2026-09-10T20:41:29.000Z",
+         "ArrivalStatus": "onTime"
+        },
+        "TrainNumbers": {
+         "TrainNumberRef": [
+          {
+           "value": "ETOU25"
+          }
+         ]
+        },
+        "VehicleFeatureRef": [
+         "longTrain"
+        ],
+        "DirectionRef": {
+         "value": "Retour"
+        }
+       }
+      },
+      {
+       "RecordedAtTime": "2026-09-10T20:09:13.580Z",
+       "ItemIdentifier": "SNCF_MAGENTA_PRD:Item::58774-33-5e21f907-cc09-40c7-a819-65a1e6af0d0b:",
+       "MonitoringRef": {
+        "value": "STIF:StopArea:SP:58774:"
+       },
+       "MonitoredVehicleJourney": {
+        "LineRef": {
+         "value": "STIF:Line::C01743:"
+        },
+        "OperatorRef": {},
+        "FramedVehicleJourneyRef": {
+         "DataFrameRef": {
+          "value": "any"
+         },
+         "DatedVehicleJourneyRef": "SNCF_MAGENTA_PRD:VehicleJourney::5e21f907-cc09-40c7-a819-65a1e6af0d0b:LOC"
+        },
+        "DirectionName": [],
+        "DestinationRef": {
+         "value": "STIF:StopArea:SP:58774:"
+        },
+        "DestinationName": [
+         {
+          "value": "Massy-Palaiseau"
+         }
+        ],
+        "VehicleJourneyName": [
+         {
+          "value": "KANE06"
+         }
+        ],
+        "JourneyNote": [
+         {
+          "value": "KANE"
+         }
+        ],
+        "MonitoredCall": {
+         "StopPointName": [
+          {
+           "value": "Massy-Palaiseau"
+          }
+         ],
+         "VehicleAtStop": false,
+         "DestinationDisplay": [
+          {
+           "value": "Massy-Palaiseau"
+          }
+         ],
+         "ArrivalStopAssignment": {
+          "ExpectedQuayRef": {
+           "value": "STIF:StopPoint:Q:474058:"
+          }
+         },
+         "ExpectedArrivalTime": "2026-09-10T20:44:38.000Z",
+         "DeparturePlatformName": {
+          "value": "A"
+         },
+         "DepartureStatus": "onTime",
+         "Order": 33,
+         "AimedArrivalTime": "2026-09-10T20:44:29.000Z",
+         "ArrivalPlatformName": {
+          "value": "A"
+         },
+         "ArrivalStatus": "onTime"
+        },
+        "TrainNumbers": {
+         "TrainNumberRef": [
+          {
+           "value": "KANE06"
+          }
+         ]
+        },
+        "VehicleFeatureRef": [
+         "longTrain"
+        ],
+        "DirectionRef": {
+         "value": "Aller"
+        }
+       }
+      },
+      {
+       "RecordedAtTime": "2026-09-10T20:10:33.804Z",
+       "ItemIdentifier": "SNCF_MAGENTA_PRD:Item::58774-33-dc2542be-688e-4a79-a430-24b08a6cae06:",
+       "MonitoringRef": {
+        "value": "STIF:StopArea:SP:58774:"
+       },
+       "MonitoredVehicleJourney": {
+        "LineRef": {
+         "value": "STIF:Line::C01743:"
+        },
+        "OperatorRef": {},
+        "FramedVehicleJourneyRef": {
+         "DataFrameRef": {
+          "value": "any"
+         },
+         "DatedVehicleJourneyRef": "SNCF_MAGENTA_PRD:VehicleJourney::dc2542be-688e-4a79-a430-24b08a6cae06:LOC"
+        },
+        "DirectionName": [],
+        "DestinationRef": {
+         "value": "STIF:StopArea:SP:47889:"
+        },
+        "DestinationName": [
+         {
+          "value": "Saint-Rémy-lès-Chevreuse"
+         }
+        ],
+        "VehicleJourneyName": [
+         {
+          "value": "PIED10"
+         }
+        ],
+        "JourneyNote": [
+         {
+          "value": "PIED"
+         }
+        ],
+        "MonitoredCall": {
+         "StopPointName": [
+          {
+           "value": "Massy-Palaiseau"
+          }
+         ],
+         "VehicleAtStop": false,
+         "DestinationDisplay": [
+          {
+           "value": "Saint-Rémy-lès-Chevreuse"
+          }
+         ],
+         "ArrivalStopAssignment": {
+          "ExpectedQuayRef": {
+           "value": "STIF:StopPoint:Q:474060:"
+          }
+         },
+         "DepartureStopAssignment": {
+          "ExpectedQuayRef": {
+           "value": "STIF:StopPoint:Q:474060:"
+          }
+         },
+         "ExpectedArrivalTime": "2026-09-10T20:47:58.000Z",
+         "DeparturePlatformName": {
+          "value": "1"
+         },
+         "ExpectedDepartureTime": "2026-09-10T20:48:18.000Z",
+         "DepartureStatus": "onTime",
+         "Order": 33,
+         "AimedArrivalTime": "2026-09-10T20:47:37.000Z",
+         "ArrivalPlatformName": {
+          "value": "1"
+         },
+         "AimedDepartureTime": "2026-09-10T20:48:17.000Z",
+         "ArrivalStatus": "onTime"
+        },
+        "TrainNumbers": {
+         "TrainNumberRef": [
+          {
+           "value": "PIED10"
+          }
+         ]
+        },
+        "VehicleFeatureRef": [
+         "longTrain"
+        ],
+        "DirectionRef": {
+         "value": "Aller"
+        }
+       }
+      },
+      {
+       "RecordedAtTime": "2026-09-10T02:24:22.236Z",
+       "ItemIdentifier": "SNCF_MAGENTA_PRD:Item::58774-51-e30e0287-4547-4cb6-a816-ac272f29c431:",
+       "MonitoringRef": {
+        "value": "STIF:StopArea:SP:58774:"
+       },
+       "MonitoredVehicleJourney": {
+        "LineRef": {
+         "value": "STIF:Line::C01743:"
+        },
+        "OperatorRef": {},
+        "FramedVehicleJourneyRef": {
+         "DataFrameRef": {
+          "value": "any"
+         },
+         "DatedVehicleJourneyRef": "SNCF_MAGENTA_PRD:VehicleJourney::e30e0287-4547-4cb6-a816-ac272f29c431:LOC"
+        },
+        "DirectionName": [],
+        "DestinationRef": {
+         "value": "STIF:StopArea:SP:473364:"
+        },
+        "DestinationName": [
+         {
+          "value": "Aéroport Charles de Gaulle 2 (Terminal 2)"
+         }
+        ],
+        "VehicleJourneyName": [
+         {
+          "value": "ENNE29"
+         }
+        ],
+        "JourneyNote": [
+         {
+          "value": "ENNE"
+         }
+        ],
+        "MonitoredCall": {
+         "StopPointName": [
+          {
+           "value": "Massy-Palaiseau"
+          }
+         ],
+         "VehicleAtStop": false,
+         "DestinationDisplay": [
+          {
+           "value": "Aéroport Charles de Gaulle 2 (Terminal 2)"
+          }
+         ],
+         "ArrivalStopAssignment": {
+          "ExpectedQuayRef": {
+           "value": "STIF:StopPoint:Q:474056:"
+          }
+         },
+         "DepartureStopAssignment": {
+          "ExpectedQuayRef": {
+           "value": "STIF:StopPoint:Q:474056:"
+          }
+         },
+         "ExpectedArrivalTime": "2026-09-10T20:56:14.000Z",
+         "DeparturePlatformName": {
+          "value": "2"
+         },
+         "ExpectedDepartureTime": "2026-09-10T20:56:34.000Z",
+         "DepartureStatus": "onTime",
+         "Order": 51,
+         "AimedArrivalTime": "2026-09-10T20:56:14.000Z",
+         "ArrivalPlatformName": {
+          "value": "2"
+         },
+         "AimedDepartureTime": "2026-09-10T20:57:04.000Z",
+         "ArrivalStatus": "onTime"
+        },
+        "TrainNumbers": {
+         "TrainNumberRef": [
+          {
+           "value": "ENNE29"
+          }
+         ]
+        },
+        "VehicleFeatureRef": [
+         "longTrain"
+        ],
+        "DirectionRef": {
+         "value": "Retour"
+        }
+       }
+      },
+      {
+       "RecordedAtTime": "2026-09-10T20:11:02.046Z",
+       "ItemIdentifier": "SNCF_MAGENTA_PRD:Item::58774-33-7d81c4ff-8587-4a93-9bbc-5e2db5bd9de8:",
+       "MonitoringRef": {
+        "value": "STIF:StopArea:SP:58774:"
+       },
+       "MonitoredVehicleJourney": {
+        "LineRef": {
+         "value": "STIF:Line::C01743:"
+        },
+        "OperatorRef": {},
+        "FramedVehicleJourneyRef": {
+         "DataFrameRef": {
+          "value": "any"
+         },
+         "DatedVehicleJourneyRef": "SNCF_MAGENTA_PRD:VehicleJourney::7d81c4ff-8587-4a93-9bbc-5e2db5bd9de8:LOC"
+        },
+        "DirectionName": [],
+        "DestinationRef": {
+         "value": "STIF:StopArea:SP:58774:"
+        },
+        "DestinationName": [
+         {
+          "value": "Massy-Palaiseau"
+         }
+        ],
+        "VehicleJourneyName": [
+         {
+          "value": "KANE12"
+         }
+        ],
+        "JourneyNote": [
+         {
+          "value": "KANE"
+         }
+        ],
+        "MonitoredCall": {
+         "StopPointName": [
+          {
+           "value": "Massy-Palaiseau"
+          }
+         ],
+         "VehicleAtStop": false,
+         "DestinationDisplay": [
+          {
+           "value": "Massy-Palaiseau"
+          }
+         ],
+         "ArrivalStopAssignment": {
+          "ExpectedQuayRef": {
+           "value": "STIF:StopPoint:Q:474058:"
+          }
+         },
+         "ExpectedArrivalTime": "2026-09-10T20:59:29.000Z",
+         "DeparturePlatformName": {
+          "value": "A"
+         },
+         "DepartureStatus": "onTime",
+         "Order": 33,
+         "AimedArrivalTime": "2026-09-10T20:59:29.000Z",
+         "ArrivalPlatformName": {
+          "value": "A"
+         },
+         "ArrivalStatus": "onTime"
+        },
+        "TrainNumbers": {
+         "TrainNumberRef": [
+          {
+           "value": "KANE12"
+          }
+         ]
+        },
+        "VehicleFeatureRef": [
+         "longTrain"
+        ],
+        "DirectionRef": {
+         "value": "Aller"
+        }
+       }
+      },
+      {
+       "RecordedAtTime": "2026-09-10T20:04:22.556Z",
+       "ItemIdentifier": "SNCF_MAGENTA_PRD:Item::58774-33-b5581e5b-13ea-47cc-b023-99accbc57e12:",
+       "MonitoringRef": {
+        "value": "STIF:StopArea:SP:58774:"
+       },
+       "MonitoredVehicleJourney": {
+        "LineRef": {
+         "value": "STIF:Line::C01743:"
+        },
+        "OperatorRef": {},
+        "FramedVehicleJourneyRef": {
+         "DataFrameRef": {
+          "value": "any"
+         },
+         "DatedVehicleJourneyRef": "SNCF_MAGENTA_PRD:VehicleJourney::b5581e5b-13ea-47cc-b023-99accbc57e12:LOC"
+        },
+        "DirectionName": [],
+        "DestinationRef": {
+         "value": "STIF:StopArea:SP:47889:"
+        },
+        "DestinationName": [
+         {
+          "value": "Saint-Rémy-lès-Chevreuse"
+         }
+        ],
+        "VehicleJourneyName": [
+         {
+          "value": "PIED16"
+         }
+        ],
+        "JourneyNote": [
+         {
+          "value": "PIED"
+         }
+        ],
+        "MonitoredCall": {
+         "StopPointName": [
+          {
+           "value": "Massy-Palaiseau"
+          }
+         ],
+         "VehicleAtStop": false,
+         "DestinationDisplay": [
+          {
+           "value": "Saint-Rémy-lès-Chevreuse"
+          }
+         ],
+         "ArrivalStopAssignment": {
+          "ExpectedQuayRef": {
+           "value": "STIF:StopPoint:Q:474060:"
+          }
+         },
+         "DepartureStopAssignment": {
+          "ExpectedQuayRef": {
+           "value": "STIF:StopPoint:Q:474060:"
+          }
+         },
+         "ExpectedArrivalTime": "2026-09-10T21:05:41.000Z",
+         "DeparturePlatformName": {
+          "value": "1"
+         },
+         "ExpectedDepartureTime": "2026-09-10T21:06:01.000Z",
+         "DepartureStatus": "onTime",
+         "Order": 33,
+         "AimedArrivalTime": "2026-09-10T21:02:37.000Z",
+         "ArrivalPlatformName": {
+          "value": "1"
+         },
+         "AimedDepartureTime": "2026-09-10T21:03:17.000Z",
+         "ArrivalStatus": "onTime"
+        },
+        "TrainNumbers": {
+         "TrainNumberRef": [
+          {
+           "value": "PIED16"
+          }
+         ]
+        },
+        "VehicleFeatureRef": [
+         "longTrain"
+        ],
+        "DirectionRef": {
+         "value": "Aller"
+        }
+       }
+      },
+      {
+       "RecordedAtTime": "2026-09-10T02:25:07.384Z",
+       "ItemIdentifier": "SNCF_MAGENTA_PRD:Item::58774-31-680dedcc-2a25-4076-afae-f0fbb9f132d8:",
+       "MonitoringRef": {
+        "value": "STIF:StopArea:SP:58774:"
+       },
+       "MonitoredVehicleJourney": {
+        "LineRef": {
+         "value": "STIF:Line::C01743:"
+        },
+        "OperatorRef": {},
+        "FramedVehicleJourneyRef": {
+         "DataFrameRef": {
+          "value": "any"
+         },
+         "DatedVehicleJourneyRef": "SNCF_MAGENTA_PRD:VehicleJourney::680dedcc-2a25-4076-afae-f0fbb9f132d8:LOC"
+        },
+        "DirectionName": [],
+        "DestinationRef": {
+         "value": "STIF:StopArea:SP:473364:"
+        },
+        "DestinationName": [
+         {
+          "value": "Aéroport Charles de Gaulle 2 (Terminal 2)"
+         }
+        ],
+        "VehicleJourneyName": [
+         {
+          "value": "ETOU33"
+         }
+        ],
+        "JourneyNote": [
+         {
+          "value": "ETOU"
+         }
+        ],
+        "MonitoredCall": {
+         "StopPointName": [
+          {
+           "value": "Massy-Palaiseau"
+          }
+         ],
+         "VehicleAtStop": false,
+         "DestinationDisplay": [
+          {
+           "value": "Aéroport Charles de Gaulle 2 (Terminal 2)"
+          }
+         ],
+         "DepartureStopAssignment": {
+          "ExpectedQuayRef": {
+           "value": "STIF:StopPoint:Q:474061:"
+          }
+         },
+         "DeparturePlatformName": {
+          "value": "B"
+         },
+         "ExpectedDepartureTime": "2026-09-10T21:11:29.000Z",
+         "DepartureStatus": "onTime",
+         "Order": 31,
+         "ArrivalPlatformName": {
+          "value": "B"
+         },
+         "AimedDepartureTime": "2026-09-10T21:11:29.000Z",
+         "ArrivalStatus": "onTime"
+        },
+        "TrainNumbers": {
+         "TrainNumberRef": [
+          {
+           "value": "ETOU33"
+          }
+         ]
+        },
+        "VehicleFeatureRef": [
+         "longTrain"
+        ],
+        "DirectionRef": {
+         "value": "Retour"
+        }
+       }
+      },
+      {
+       "RecordedAtTime": "2026-09-10T20:10:31.988Z",
+       "ItemIdentifier": "SNCF_MAGENTA_PRD:Item::58774-60-8c3e7240-3e68-4b39-8a1f-cd299d71d49e:",
+       "MonitoringRef": {
+        "value": "STIF:StopArea:SP:58774:"
+       },
+       "MonitoredVehicleJourney": {
+        "LineRef": {
+         "value": "STIF:Line::C01743:"
+        },
+        "OperatorRef": {},
+        "FramedVehicleJourneyRef": {
+         "DataFrameRef": {
+          "value": "any"
+         },
+         "DatedVehicleJourneyRef": "SNCF_MAGENTA_PRD:VehicleJourney::8c3e7240-3e68-4b39-8a1f-cd299d71d49e:LOC"
+        },
+        "DirectionName": [],
+        "DestinationRef": {
+         "value": "STIF:StopArea:SP:58774:"
+        },
+        "DestinationName": [
+         {
+          "value": "Massy-Palaiseau"
+         }
+        ],
+        "VehicleJourneyName": [
+         {
+          "value": "KANE18"
+         }
+        ],
+        "JourneyNote": [
+         {
+          "value": "KANE"
+         }
+        ],
+        "MonitoredCall": {
+         "StopPointName": [
+          {
+           "value": "Massy-Palaiseau"
+          }
+         ],
+         "VehicleAtStop": false,
+         "DestinationDisplay": [
+          {
+           "value": "Massy-Palaiseau"
+          }
+         ],
+         "ArrivalStopAssignment": {
+          "ExpectedQuayRef": {
+           "value": "STIF:StopPoint:Q:474058:"
+          }
+         },
+         "ExpectedArrivalTime": "2026-09-10T21:17:29.000Z",
+         "DeparturePlatformName": {
+          "value": "A"
+         },
+         "DepartureStatus": "onTime",
+         "Order": 60,
+         "AimedArrivalTime": "2026-09-10T21:14:29.000Z",
+         "ArrivalPlatformName": {
+          "value": "A"
+         },
+         "ArrivalStatus": "onTime"
+        },
+        "TrainNumbers": {
+         "TrainNumberRef": [
+          {
+           "value": "KANE18"
+          }
+         ]
+        },
+        "VehicleFeatureRef": [
+         "longTrain"
+        ],
+        "DirectionRef": {
+         "value": "Aller"
+        }
+       }
+      },
+      {
+       "RecordedAtTime": "2026-09-10T02:24:24.684Z",
+       "ItemIdentifier": "SNCF_MAGENTA_PRD:Item::58774-51-c604c810-c8fe-4e60-be01-dca77cb6ab11:",
+       "MonitoringRef": {
+        "value": "STIF:StopArea:SP:58774:"
+       },
+       "MonitoredVehicleJourney": {
+        "LineRef": {
+         "value": "STIF:Line::C01743:"
+        },
+        "OperatorRef": {},
+        "FramedVehicleJourneyRef": {
+         "DataFrameRef": {
+          "value": "any"
+         },
+         "DatedVehicleJourneyRef": "SNCF_MAGENTA_PRD:VehicleJourney::c604c810-c8fe-4e60-be01-dca77cb6ab11:LOC"
+        },
+        "DirectionName": [],
+        "DestinationRef": {
+         "value": "STIF:StopArea:SP:473364:"
+        },
+        "DestinationName": [
+         {
+          "value": "Aéroport Charles de Gaulle 2 (Terminal 2)"
+         }
+        ],
+        "VehicleJourneyName": [
+         {
+          "value": "ENNE37"
+         }
+        ],
+        "JourneyNote": [
+         {
+          "value": "ENNE"
+         }
+        ],
+        "MonitoredCall": {
+         "StopPointName": [
+          {
+           "value": "Massy-Palaiseau"
+          }
+         ],
+         "VehicleAtStop": false,
+         "DestinationDisplay": [
+          {
+           "value": "Aéroport Charles de Gaulle 2 (Terminal 2)"
+          }
+         ],
+         "ArrivalStopAssignment": {
+          "ExpectedQuayRef": {
+           "value": "STIF:StopPoint:Q:474056:"
+          }
+         },
+         "DepartureStopAssignment": {
+          "ExpectedQuayRef": {
+           "value": "STIF:StopPoint:Q:474056:"
+          }
+         },
+         "ExpectedArrivalTime": "2026-09-10T21:26:14.000Z",
+         "DeparturePlatformName": {
+          "value": "2"
+         },
+         "ExpectedDepartureTime": "2026-09-10T21:26:34.000Z",
+         "DepartureStatus": "onTime",
+         "Order": 51,
+         "AimedArrivalTime": "2026-09-10T21:26:14.000Z",
+         "ArrivalPlatformName": {
+          "value": "2"
+         },
+         "AimedDepartureTime": "2026-09-10T21:27:04.000Z",
+         "ArrivalStatus": "onTime"
+        },
+        "TrainNumbers": {
+         "TrainNumberRef": [
+          {
+           "value": "ENNE37"
+          }
+         ]
+        },
+        "VehicleFeatureRef": [
+         "longTrain"
+        ],
+        "DirectionRef": {
+         "value": "Retour"
+        }
+       }
+      },
+      {
+       "RecordedAtTime": "2026-09-10T01:00:36.365Z",
+       "ItemIdentifier": "SNCF_MAGENTA_PRD:Item::58774-8-b18d7647-ad11-42b0-8702-aae505af54cb:",
+       "MonitoringRef": {
+        "value": "STIF:StopArea:SP:58774:"
+       },
+       "MonitoredVehicleJourney": {
+        "LineRef": {
+         "value": "STIF:Line::C02711:"
+        },
+        "OperatorRef": {},
+        "FramedVehicleJourneyRef": {
+         "DataFrameRef": {
+          "value": "any"
+         },
+         "DatedVehicleJourneyRef": "SNCF_MAGENTA_PRD:VehicleJourney::b18d7647-ad11-42b0-8702-aae505af54cb:LOC"
+        },
+        "DirectionName": [],
+        "DestinationRef": {
+         "value": "STIF:StopArea:SP:43219:"
+        },
+        "DestinationName": [
+         {
+          "value": "Versailles Chantiers"
+         }
+        ],
+        "VehicleJourneyName": [
+         {
+          "value": "147683"
+         }
+        ],
+        "JourneyNote": [
+         {
+          "value": "CIME"
+         }
+        ],
+        "MonitoredCall": {
+         "StopPointName": [
+          {
+           "value": "Massy-Palaiseau"
+          }
+         ],
+         "VehicleAtStop": false,
+         "DestinationDisplay": [
+          {
+           "value": "Versailles Chantiers"
+          }
+         ],
+         "DepartureStopAssignment": {
+          "ExpectedQuayRef": {
+           "value": "STIF:StopPoint:Q:471608:"
+          }
+         },
+         "DeparturePlatformName": {
+          "value": "2"
+         },
+         "ExpectedDepartureTime": "2026-09-10T21:30:00.000Z",
+         "DepartureStatus": "onTime",
+         "Order": 8,
+         "ArrivalPlatformName": {
+          "value": "2"
+         },
+         "AimedDepartureTime": "2026-09-10T21:30:00.000Z",
+         "ArrivalStatus": "onTime"
+        },
+        "TrainNumbers": {
+         "TrainNumberRef": [
+          {
+           "value": "147683"
+          }
+         ]
+        },
+        "VehicleFeatureRef": [
+         "shortTrain"
+        ],
+        "DirectionRef": {
+         "value": "Retour"
+        }
+       }
+      },
+      {
+       "RecordedAtTime": "2026-09-10T01:00:36.366Z",
+       "ItemIdentifier": "SNCF_MAGENTA_PRD:Item::58774-14-21c6f642-8144-49c7-9e74-6702440ec686:",
+       "MonitoringRef": {
+        "value": "STIF:StopArea:SP:58774:"
+       },
+       "MonitoredVehicleJourney": {
+        "LineRef": {
+         "value": "STIF:Line::C02711:"
+        },
+        "OperatorRef": {},
+        "FramedVehicleJourneyRef": {
+         "DataFrameRef": {
+          "value": "any"
+         },
+         "DatedVehicleJourneyRef": "SNCF_MAGENTA_PRD:VehicleJourney::21c6f642-8144-49c7-9e74-6702440ec686:LOC"
+        },
+        "DirectionName": [],
+        "DestinationRef": {
+         "value": "STIF:StopArea:SP:58774:"
+        },
+        "DestinationName": [
+         {
+          "value": "Massy-Palaiseau"
+         }
+        ],
+        "VehicleJourneyName": [
+         {
+          "value": "148698"
+         }
+        ],
+        "JourneyNote": [
+         {
+          "value": "MICK"
+         }
+        ],
+        "MonitoredCall": {
+         "StopPointName": [
+          {
+           "value": "Massy-Palaiseau"
+          }
+         ],
+         "VehicleAtStop": false,
+         "DestinationDisplay": [
+          {
+           "value": "Massy-Palaiseau"
+          }
+         ],
+         "ArrivalStopAssignment": {
+          "ExpectedQuayRef": {
+           "value": "STIF:StopPoint:Q:472788:"
+          }
+         },
+         "ExpectedArrivalTime": "2026-09-10T21:36:00.000Z",
+         "DeparturePlatformName": {
+          "value": "1"
+         },
+         "DepartureStatus": "onTime",
+         "Order": 14,
+         "AimedArrivalTime": "2026-09-10T21:36:00.000Z",
+         "ArrivalPlatformName": {
+          "value": "1"
+         },
+         "ArrivalStatus": "onTime"
+        },
+        "TrainNumbers": {
+         "TrainNumberRef": [
+          {
+           "value": "148698"
+          }
+         ]
+        },
+        "VehicleFeatureRef": [
+         "shortTrain"
+        ],
+        "DirectionRef": {
+         "value": "Aller"
+        }
+       }
+      },
+      {
+       "RecordedAtTime": "2026-09-10T02:26:44.210Z",
+       "ItemIdentifier": "SNCF_MAGENTA_PRD:Item::58774-70-e4158a13-97a9-4e75-ae91-4002228f8002:",
+       "MonitoringRef": {
+        "value": "STIF:StopArea:SP:58774:"
+       },
+       "MonitoredVehicleJourney": {
+        "LineRef": {
+         "value": "STIF:Line::C01743:"
+        },
+        "OperatorRef": {},
+        "FramedVehicleJourneyRef": {
+         "DataFrameRef": {
+          "value": "any"
+         },
+         "DatedVehicleJourneyRef": "SNCF_MAGENTA_PRD:VehicleJourney::e4158a13-97a9-4e75-ae91-4002228f8002:LOC"
+        },
+        "DirectionName": [],
+        "DestinationRef": {
+         "value": "STIF:StopArea:SP:47889:"
+        },
+        "DestinationName": [
+         {
+          "value": "Saint-Rémy-lès-Chevreuse"
+         }
+        ],
+        "VehicleJourneyName": [
+         {
+          "value": "POIN28"
+         }
+        ],
+        "JourneyNote": [
+         {
+          "value": "POIN"
+         }
+        ],
+        "MonitoredCall": {
+         "StopPointName": [
+          {
+           "value": "Massy-Palaiseau"
+          }
+         ],
+         "VehicleAtStop": false,
+         "DestinationDisplay": [
+          {
+           "value": "Saint-Rémy-lès-Chevreuse"
+          }
+         ],
+         "ArrivalStopAssignment": {
+          "ExpectedQuayRef": {
+           "value": "STIF:StopPoint:Q:474060:"
+          }
+         },
+         "DepartureStopAssignment": {
+          "ExpectedQuayRef": {
+           "value": "STIF:StopPoint:Q:474060:"
+          }
+         },
+         "ExpectedArrivalTime": "2026-09-10T21:37:17.000Z",
+         "DeparturePlatformName": {
+          "value": "1"
+         },
+         "ExpectedDepartureTime": "2026-09-10T21:37:37.000Z",
+         "DepartureStatus": "onTime",
+         "Order": 70,
+         "AimedArrivalTime": "2026-09-10T21:37:17.000Z",
+         "ArrivalPlatformName": {
+          "value": "1"
+         },
+         "AimedDepartureTime": "2026-09-10T21:38:07.000Z",
+         "ArrivalStatus": "onTime"
+        },
+        "TrainNumbers": {
+         "TrainNumberRef": [
+          {
+           "value": "POIN28"
+          }
+         ]
+        },
+        "VehicleFeatureRef": [
+         "longTrain"
+        ],
+        "DirectionRef": {
+         "value": "Aller"
+        }
+       }
+      },
+      {
+       "RecordedAtTime": "2026-09-10T02:24:40.271Z",
+       "ItemIdentifier": "SNCF_MAGENTA_PRD:Item::58774-31-bdc77cc8-1066-424f-936a-c590150b770d:",
+       "MonitoringRef": {
+        "value": "STIF:StopArea:SP:58774:"
+       },
+       "MonitoredVehicleJourney": {
+        "LineRef": {
+         "value": "STIF:Line::C01743:"
+        },
+        "OperatorRef": {},
+        "FramedVehicleJourneyRef": {
+         "DataFrameRef": {
+          "value": "any"
+         },
+         "DatedVehicleJourneyRef": "SNCF_MAGENTA_PRD:VehicleJourney::bdc77cc8-1066-424f-936a-c590150b770d:LOC"
+        },
+        "DirectionName": [],
+        "DestinationRef": {
+         "value": "STIF:StopArea:SP:473364:"
+        },
+        "DestinationName": [
+         {
+          "value": "Aéroport Charles de Gaulle 2 (Terminal 2)"
+         }
+        ],
+        "VehicleJourneyName": [
+         {
+          "value": "ETOU41"
+         }
+        ],
+        "JourneyNote": [
+         {
+          "value": "ETOU"
+         }
+        ],
+        "MonitoredCall": {
+         "StopPointName": [
+          {
+           "value": "Massy-Palaiseau"
+          }
+         ],
+         "VehicleAtStop": false,
+         "DestinationDisplay": [
+          {
+           "value": "Aéroport Charles de Gaulle 2 (Terminal 2)"
+          }
+         ],
+         "DepartureStopAssignment": {
+          "ExpectedQuayRef": {
+           "value": "STIF:StopPoint:Q:474061:"
+          }
+         },
+         "DeparturePlatformName": {
+          "value": "B"
+         },
+         "ExpectedDepartureTime": "2026-09-10T21:42:19.000Z",
+         "DepartureStatus": "onTime",
+         "Order": 31,
+         "ArrivalPlatformName": {
+          "value": "B"
+         },
+         "AimedDepartureTime": "2026-09-10T21:41:59.000Z",
+         "ArrivalStatus": "onTime"
+        },
+        "TrainNumbers": {
+         "TrainNumberRef": [
+          {
+           "value": "ETOU41"
+          }
+         ]
+        },
+        "VehicleFeatureRef": [
+         "longTrain"
+        ],
+        "DirectionRef": {
+         "value": "Retour"
+        }
+       }
+      },
+      {
+       "RecordedAtTime": "2026-09-10T02:26:42.967Z",
+       "ItemIdentifier": "SNCF_MAGENTA_PRD:Item::58774-70-6104dd81-1162-49dd-89ac-77f8c920be2c:",
+       "MonitoringRef": {
+        "value": "STIF:StopArea:SP:58774:"
+       },
+       "MonitoredVehicleJourney": {
+        "LineRef": {
+         "value": "STIF:Line::C01743:"
+        },
+        "OperatorRef": {},
+        "FramedVehicleJourneyRef": {
+         "DataFrameRef": {
+          "value": "any"
+         },
+         "DatedVehicleJourneyRef": "SNCF_MAGENTA_PRD:VehicleJourney::6104dd81-1162-49dd-89ac-77f8c920be2c:LOC"
+        },
+        "DirectionName": [],
+        "DestinationRef": {
+         "value": "STIF:StopArea:SP:47889:"
+        },
+        "DestinationName": [
+         {
+          "value": "Saint-Rémy-lès-Chevreuse"
+         }
+        ],
+        "VehicleJourneyName": [
+         {
+          "value": "POIN34"
+         }
+        ],
+        "JourneyNote": [
+         {
+          "value": "POIN"
+         }
+        ],
+        "MonitoredCall": {
+         "StopPointName": [
+          {
+           "value": "Massy-Palaiseau"
+          }
+         ],
+         "VehicleAtStop": false,
+         "DestinationDisplay": [
+          {
+           "value": "Saint-Rémy-lès-Chevreuse"
+          }
+         ],
+         "ArrivalStopAssignment": {
+          "ExpectedQuayRef": {
+           "value": "STIF:StopPoint:Q:474060:"
+          }
+         },
+         "DepartureStopAssignment": {
+          "ExpectedQuayRef": {
+           "value": "STIF:StopPoint:Q:474060:"
+          }
+         },
+         "ExpectedArrivalTime": "2026-09-10T21:52:17.000Z",
+         "DeparturePlatformName": {
+          "value": "1"
+         },
+         "ExpectedDepartureTime": "2026-09-10T21:52:37.000Z",
+         "DepartureStatus": "onTime",
+         "Order": 70,
+         "AimedArrivalTime": "2026-09-10T21:52:17.000Z",
+         "ArrivalPlatformName": {
+          "value": "1"
+         },
+         "AimedDepartureTime": "2026-09-10T21:53:07.000Z",
+         "ArrivalStatus": "onTime"
+        },
+        "TrainNumbers": {
+         "TrainNumberRef": [
+          {
+           "value": "POIN34"
+          }
+         ]
+        },
+        "VehicleFeatureRef": [
+         "longTrain"
+        ],
+        "DirectionRef": {
+         "value": "Aller"
+        }
+       }
+      },
+      {
+       "RecordedAtTime": "2026-09-10T02:25:11.039Z",
+       "ItemIdentifier": "SNCF_MAGENTA_PRD:Item::58774-50-b132938b-ccc6-43ea-9da2-b9a0019f693e:",
+       "MonitoringRef": {
+        "value": "STIF:StopArea:SP:58774:"
+       },
+       "MonitoredVehicleJourney": {
+        "LineRef": {
+         "value": "STIF:Line::C01743:"
+        },
+        "OperatorRef": {},
+        "FramedVehicleJourneyRef": {
+         "DataFrameRef": {
+          "value": "any"
+         },
+         "DatedVehicleJourneyRef": "SNCF_MAGENTA_PRD:VehicleJourney::b132938b-ccc6-43ea-9da2-b9a0019f693e:LOC"
+        },
+        "DirectionName": [],
+        "DestinationRef": {
+         "value": "STIF:StopArea:SP:43164:"
+        },
+        "DestinationName": [
+         {
+          "value": "Mitry - Claye"
+         }
+        ],
+        "VehicleJourneyName": [
+         {
+          "value": "IBEN45"
+         }
+        ],
+        "JourneyNote": [
+         {
+          "value": "IBEN"
+         }
+        ],
+        "MonitoredCall": {
+         "StopPointName": [
+          {
+           "value": "Massy-Palaiseau"
+          }
+         ],
+         "VehicleAtStop": false,
+         "DestinationDisplay": [
+          {
+           "value": "Mitry - Claye"
+          }
+         ],
+         "ArrivalStopAssignment": {
+          "ExpectedQuayRef": {
+           "value": "STIF:StopPoint:Q:474056:"
+          }
+         },
+         "DepartureStopAssignment": {
+          "ExpectedQuayRef": {
+           "value": "STIF:StopPoint:Q:474056:"
+          }
+         },
+         "ExpectedArrivalTime": "2026-09-10T22:02:49.000Z",
+         "DeparturePlatformName": {
+          "value": "2"
+         },
+         "ExpectedDepartureTime": "2026-09-10T22:03:09.000Z",
+         "DepartureStatus": "onTime",
+         "Order": 50,
+         "AimedArrivalTime": "2026-09-10T22:02:49.000Z",
+         "ArrivalPlatformName": {
+          "value": "2"
+         },
+         "AimedDepartureTime": "2026-09-10T22:03:39.000Z",
+         "ArrivalStatus": "onTime"
+        },
+        "TrainNumbers": {
+         "TrainNumberRef": [
+          {
+           "value": "IBEN45"
+          }
+         ]
+        },
+        "VehicleFeatureRef": [
+         "longTrain"
+        ],
+        "DirectionRef": {
+         "value": "Retour"
+        }
+       }
+      },
+      {
+       "RecordedAtTime": "2026-09-10T02:26:40.593Z",
+       "ItemIdentifier": "SNCF_MAGENTA_PRD:Item::58774-70-896a8ce2-92ad-4ec2-a497-185938d0e6c6:",
+       "MonitoringRef": {
+        "value": "STIF:StopArea:SP:58774:"
+       },
+       "MonitoredVehicleJourney": {
+        "LineRef": {
+         "value": "STIF:Line::C01743:"
+        },
+        "OperatorRef": {},
+        "FramedVehicleJourneyRef": {
+         "DataFrameRef": {
+          "value": "any"
+         },
+         "DatedVehicleJourneyRef": "SNCF_MAGENTA_PRD:VehicleJourney::896a8ce2-92ad-4ec2-a497-185938d0e6c6:LOC"
+        },
+        "DirectionName": [],
+        "DestinationRef": {
+         "value": "STIF:StopArea:SP:47889:"
+        },
+        "DestinationName": [
+         {
+          "value": "Saint-Rémy-lès-Chevreuse"
+         }
+        ],
+        "VehicleJourneyName": [
+         {
+          "value": "POIN40"
+         }
+        ],
+        "JourneyNote": [
+         {
+          "value": "POIN"
+         }
+        ],
+        "MonitoredCall": {
+         "StopPointName": [
+          {
+           "value": "Massy-Palaiseau"
+          }
+         ],
+         "VehicleAtStop": false,
+         "DestinationDisplay": [
+          {
+           "value": "Saint-Rémy-lès-Chevreuse"
+          }
+         ],
+         "ArrivalStopAssignment": {
+          "ExpectedQuayRef": {
+           "value": "STIF:StopPoint:Q:474060:"
+          }
+         },
+         "DepartureStopAssignment": {
+          "ExpectedQuayRef": {
+           "value": "STIF:StopPoint:Q:474060:"
+          }
+         },
+         "ExpectedArrivalTime": "2026-09-10T22:07:17.000Z",
+         "DeparturePlatformName": {
+          "value": "1"
+         },
+         "ExpectedDepartureTime": "2026-09-10T22:07:37.000Z",
+         "DepartureStatus": "onTime",
+         "Order": 70,
+         "AimedArrivalTime": "2026-09-10T22:07:17.000Z",
+         "ArrivalPlatformName": {
+          "value": "1"
+         },
+         "AimedDepartureTime": "2026-09-10T22:08:07.000Z",
+         "ArrivalStatus": "onTime"
+        },
+        "TrainNumbers": {
+         "TrainNumberRef": [
+          {
+           "value": "POIN40"
+          }
+         ]
+        },
+        "VehicleFeatureRef": [
+         "longTrain"
+        ],
+        "DirectionRef": {
+         "value": "Aller"
+        }
+       }
+      },
+      {
+       "RecordedAtTime": "2026-09-10T02:26:40.368Z",
+       "ItemIdentifier": "SNCF_MAGENTA_PRD:Item::58774-70-9931e04c-dbc7-489d-932d-71ede5117a44:",
+       "MonitoringRef": {
+        "value": "STIF:StopArea:SP:58774:"
+       },
+       "MonitoredVehicleJourney": {
+        "LineRef": {
+         "value": "STIF:Line::C01743:"
+        },
+        "OperatorRef": {},
+        "FramedVehicleJourneyRef": {
+         "DataFrameRef": {
+          "value": "any"
+         },
+         "DatedVehicleJourneyRef": "SNCF_MAGENTA_PRD:VehicleJourney::9931e04c-dbc7-489d-932d-71ede5117a44:LOC"
+        },
+        "DirectionName": [],
+        "DestinationRef": {
+         "value": "STIF:StopArea:SP:47889:"
+        },
+        "DestinationName": [
+         {
+          "value": "Saint-Rémy-lès-Chevreuse"
+         }
+        ],
+        "VehicleJourneyName": [
+         {
+          "value": "POIN44"
+         }
+        ],
+        "JourneyNote": [
+         {
+          "value": "POIN"
+         }
+        ],
+        "MonitoredCall": {
+         "StopPointName": [
+          {
+           "value": "Massy-Palaiseau"
+          }
+         ],
+         "VehicleAtStop": false,
+         "DestinationDisplay": [
+          {
+           "value": "Saint-Rémy-lès-Chevreuse"
+          }
+         ],
+         "ArrivalStopAssignment": {
+          "ExpectedQuayRef": {
+           "value": "STIF:StopPoint:Q:474060:"
+          }
+         },
+         "DepartureStopAssignment": {
+          "ExpectedQuayRef": {
+           "value": "STIF:StopPoint:Q:474060:"
+          }
+         },
+         "ExpectedArrivalTime": "2026-09-10T22:22:17.000Z",
+         "DeparturePlatformName": {
+          "value": "1"
+         },
+         "ExpectedDepartureTime": "2026-09-10T22:22:37.000Z",
+         "DepartureStatus": "onTime",
+         "Order": 70,
+         "AimedArrivalTime": "2026-09-10T22:22:17.000Z",
+         "ArrivalPlatformName": {
+          "value": "1"
+         },
+         "AimedDepartureTime": "2026-09-10T22:23:07.000Z",
+         "ArrivalStatus": "onTime"
+        },
+        "TrainNumbers": {
+         "TrainNumberRef": [
+          {
+           "value": "POIN44"
+          }
+         ]
+        },
+        "VehicleFeatureRef": [
+         "longTrain"
+        ],
+        "DirectionRef": {
+         "value": "Aller"
+        }
+       }
+      },
+      {
+       "RecordedAtTime": "2026-09-10T16:56:46.299Z",
+       "ItemIdentifier": "SNCF_MAGENTA_PRD:Item::58774-31-64f7467c-648a-43df-b88b-d16644b44551:",
+       "MonitoringRef": {
+        "value": "STIF:StopArea:SP:58774:"
+       },
+       "MonitoredVehicleJourney": {
+        "LineRef": {
+         "value": "STIF:Line::C01743:"
+        },
+        "OperatorRef": {},
+        "FramedVehicleJourneyRef": {
+         "DataFrameRef": {
+          "value": "any"
+         },
+         "DatedVehicleJourneyRef": "SNCF_MAGENTA_PRD:VehicleJourney::64f7467c-648a-43df-b88b-d16644b44551:LOC"
+        },
+        "DirectionName": [],
+        "DestinationRef": {
+         "value": "STIF:StopArea:SP:43086:"
+        },
+        "DestinationName": [
+         {
+          "value": "Orsay-Ville"
+         }
+        ],
+        "VehicleJourneyName": [
+         {
+          "value": "LOVE05"
+         }
+        ],
+        "JourneyNote": [
+         {
+          "value": "LOVE"
+         }
+        ],
+        "MonitoredCall": {
+         "StopPointName": [
+          {
+           "value": "Massy-Palaiseau"
+          }
+         ],
+         "VehicleAtStop": false,
+         "DestinationDisplay": [
+          {
+           "value": "Orsay-Ville"
+          }
+         ],
+         "ArrivalStopAssignment": {
+          "ExpectedQuayRef": {
+           "value": "STIF:StopPoint:Q:474060:"
+          }
+         },
+         "DepartureStopAssignment": {
+          "ExpectedQuayRef": {
+           "value": "STIF:StopPoint:Q:474060:"
+          }
+         },
+         "ExpectedArrivalTime": "2026-09-10T22:34:09.000Z",
+         "DeparturePlatformName": {
+          "value": "1"
+         },
+         "ExpectedDepartureTime": "2026-09-10T22:34:29.000Z",
+         "DepartureStatus": "onTime",
+         "Order": 31,
+         "AimedArrivalTime": "2026-09-10T22:34:09.000Z",
+         "ArrivalPlatformName": {
+          "value": "1"
+         },
+         "AimedDepartureTime": "2026-09-10T22:34:29.000Z",
+         "ArrivalStatus": "onTime"
+        },
+        "TrainNumbers": {
+         "TrainNumberRef": [
+          {
+           "value": "LOVE05"
+          }
+         ]
+        },
+        "VehicleFeatureRef": [
+         "longTrain"
+        ],
+        "DirectionRef": {
+         "value": "Aller"
+        }
+       }
+      },
+      {
+       "RecordedAtTime": "2026-09-10T16:50:42.716Z",
+       "ItemIdentifier": "SNCF_MAGENTA_PRD:Item::58774-60-e3134cb2-0a54-42a2-b855-675a50991581:",
+       "MonitoringRef": {
+        "value": "STIF:StopArea:SP:58774:"
+       },
+       "MonitoredVehicleJourney": {
+        "LineRef": {
+         "value": "STIF:Line::C01743:"
+        },
+        "OperatorRef": {},
+        "FramedVehicleJourneyRef": {
+         "DataFrameRef": {
+          "value": "any"
+         },
+         "DatedVehicleJourneyRef": "SNCF_MAGENTA_PRD:VehicleJourney::e3134cb2-0a54-42a2-b855-675a50991581:LOC"
+        },
+        "DirectionName": [],
+        "DestinationRef": {
+         "value": "STIF:StopArea:SP:58774:"
+        },
+        "DestinationName": [
+         {
+          "value": "Massy-Palaiseau"
+         }
+        ],
+        "VehicleJourneyName": [
+         {
+          "value": "KISS48"
+         }
+        ],
+        "JourneyNote": [
+         {
+          "value": "KISS"
+         }
+        ],
+        "MonitoredCall": {
+         "StopPointName": [
+          {
+           "value": "Massy-Palaiseau"
+          }
+         ],
+         "VehicleAtStop": false,
+         "DestinationDisplay": [
+          {
+           "value": "Massy-Palaiseau"
+          }
+         ],
+         "ArrivalStopAssignment": {
+          "ExpectedQuayRef": {
+           "value": "STIF:StopPoint:Q:474058:"
+          }
+         },
+         "ExpectedArrivalTime": "2026-09-10T22:37:27.000Z",
+         "DeparturePlatformName": {
+          "value": "A"
+         },
+         "DepartureStatus": "onTime",
+         "Order": 60,
+         "AimedArrivalTime": "2026-09-10T22:37:27.000Z",
+         "ArrivalPlatformName": {
+          "value": "A"
+         },
+         "ArrivalStatus": "onTime"
+        },
+        "TrainNumbers": {
+         "TrainNumberRef": [
+          {
+           "value": "KISS48"
+          }
+         ]
+        },
+        "VehicleFeatureRef": [
+         "longTrain"
+        ],
+        "DirectionRef": {
+         "value": "Aller"
+        }
+       }
+      },
+      {
+       "RecordedAtTime": "2026-09-10T16:50:54.204Z",
+       "ItemIdentifier": "SNCF_MAGENTA_PRD:Item::58774-70-f747adda-5109-4f67-888e-3f274a4283c8:",
+       "MonitoringRef": {
+        "value": "STIF:StopArea:SP:58774:"
+       },
+       "MonitoredVehicleJourney": {
+        "LineRef": {
+         "value": "STIF:Line::C01743:"
+        },
+        "OperatorRef": {},
+        "FramedVehicleJourneyRef": {
+         "DataFrameRef": {
+          "value": "any"
+         },
+         "DatedVehicleJourneyRef": "SNCF_MAGENTA_PRD:VehicleJourney::f747adda-5109-4f67-888e-3f274a4283c8:LOC"
+        },
+        "DirectionName": [],
+        "DestinationRef": {
+         "value": "STIF:StopArea:SP:47889:"
+        },
+        "DestinationName": [
+         {
+          "value": "Saint-Rémy-lès-Chevreuse"
+         }
+        ],
+        "VehicleJourneyName": [
+         {
+          "value": "PIPO52"
+         }
+        ],
+        "JourneyNote": [
+         {
+          "value": "PIPO"
+         }
+        ],
+        "MonitoredCall": {
+         "StopPointName": [
+          {
+           "value": "Massy-Palaiseau"
+          }
+         ],
+         "VehicleAtStop": false,
+         "DestinationDisplay": [
+          {
+           "value": "Saint-Rémy-lès-Chevreuse"
+          }
+         ],
+         "ArrivalStopAssignment": {
+          "ExpectedQuayRef": {
+           "value": "STIF:StopPoint:Q:474060:"
+          }
+         },
+         "DepartureStopAssignment": {
+          "ExpectedQuayRef": {
+           "value": "STIF:StopPoint:Q:474060:"
+          }
+         },
+         "ExpectedArrivalTime": "2026-09-10T22:53:47.000Z",
+         "DeparturePlatformName": {
+          "value": "1"
+         },
+         "ExpectedDepartureTime": "2026-09-10T22:54:07.000Z",
+         "DepartureStatus": "onTime",
+         "Order": 70,
+         "AimedArrivalTime": "2026-09-10T22:53:47.000Z",
+         "ArrivalPlatformName": {
+          "value": "1"
+         },
+         "AimedDepartureTime": "2026-09-10T22:54:37.000Z",
+         "ArrivalStatus": "onTime"
+        },
+        "TrainNumbers": {
+         "TrainNumberRef": [
+          {
+           "value": "PIPO52"
+          }
+         ]
+        },
+        "VehicleFeatureRef": [
+         "longTrain"
+        ],
+        "DirectionRef": {
+         "value": "Aller"
+        }
+       }
+      }
+     ],
+     "StopLineNotice": [],
+     "ServiceException": []
+    }
+   ]
+  }
+ }
+}

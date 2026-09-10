@@ -1,0 +1,32 @@
+#!/usr/bin/env bash
+#
+# Local preview of the plugin.
+#   bin/dev            -> live PRIM data (PRIM_API_KEY in the environment or in ./.env)
+#   bin/dev fixture    -> sample data, no API key needed
+# Extra options are passed to `trmnlp serve` (e.g. --port 5000).
+#
+set -euo pipefail
+cd "$(dirname "$0")/.."
+
+# trmnlp installed through RubyGems is not necessarily on the PATH
+if command -v gem >/dev/null 2>&1; then
+  export PATH="$(gem environment gemdir)/bin:$PATH"
+fi
+
+# PRIM API key: environment variable, or a .env file (git-ignored) containing PRIM_API_KEY=...
+if [ -f .env ]; then
+  set -a; . ./.env; set +a
+fi
+
+if [ "${1:-}" = "fixture" ]; then
+  shift
+  exec bin/trmnlp serve --dir dev/fixture "$@"
+fi
+
+if [ ! -f .trmnlp.yml ]; then
+  cp dev/trmnlp.example.yml .trmnlp.yml
+  echo "→ .trmnlp.yml created from dev/trmnlp.example.yml"
+fi
+
+: "${PRIM_API_KEY:?Set PRIM_API_KEY (PRIM API key), or run: bin/dev fixture}"
+exec bin/trmnlp serve "$@"

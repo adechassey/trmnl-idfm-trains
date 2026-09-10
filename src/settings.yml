@@ -1,0 +1,92 @@
+---
+strategy: polling
+no_screen_padding: 'no'
+dark_mode: 'no'
+static_data: ''
+polling_verb: get
+framework_version: latest
+serverless_language: python
+polling_url: 'https://prim.iledefrance-mobilites.fr/marketplace/stop-monitoring?MonitoringRef=STIF:StopArea:SP:{{ stop_area_id | strip }}:'
+polling_headers: apikey={{ api_key | strip }}
+polling_body: ''
+id: 474032
+oauth_enabled: 'false'
+oauth_pkce_enabled: 'no'
+oauth_authorize_url: ''
+oauth_token_url: ''
+oauth_scopes: ''
+oauth_scope_separator: ''
+oauth_refresh_url: ''
+oauth_auth_params: ''
+oauth_token_headers: ''
+oauth_token_site: ''
+oauth_token_params: ''
+oauth_token_request_auth_method: ''
+oauth_body_format: ''
+oauth_token_response_metadata: ''
+oauth_authorization_method: ''
+oauth_refresh_params: ''
+oauth_token_field_name: ''
+oauth_expiry_field_name: ''
+oauth_expiry_strategy: ''
+oauth_fixed_expiry_ms: ''
+custom_fields:
+- keyname: about
+  field_type: author_bio
+  name: About This Plugin
+  category: travel,life
+  description: Next trains at any Île-de-France station (Transilien, RER, metro, tram), with line, destination, mission code, platform and delays, from the Île-de-France Mobilités PRIM API. You need a free PRIM API key and your station's stop area id (ZdAId), both explained below. Labels in English or French.
+  github_url: https://github.com/adechassey/trmnl-idfm-trains
+  learn_more_url: https://prim.iledefrance-mobilites.fr
+- keyname: api_key
+  field_type: string
+  name: PRIM API key
+  description: Île-de-France Mobilités API key (free, 1,000 requests per day).
+  help_text: Create an account on <a href="https://prim.iledefrance-mobilites.fr" class="underline">prim.iledefrance-mobilites.fr</a>, then generate a key under "Mes clés d'API".
+  placeholder: your PRIM key
+- keyname: stop_area_id
+  field_type: string
+  name: Station id
+  description: IDFM stop area id (ZdA). E.g. 58774 for Massy - Palaiseau.
+  help_text: Find your station in the <a href="https://data.iledefrance-mobilites.fr/explore/dataset/zones-d-arrets/table/?refine.zdatype=railStation" class="underline">IDFM stop areas dataset</a> and copy the "ZdAId" column.
+  default: '58774'
+  placeholder: '58774'
+- keyname: station_name
+  field_type: string
+  name: Display name
+  description: Screen title. Empty = name returned by the API.
+  optional: true
+  placeholder: Massy - Palaiseau
+- keyname: lines
+  field_type: string
+  name: Lines
+  description: Lines to show, comma-separated (e.g. L,U). Empty = all.
+  optional: true
+  placeholder: L,U
+- keyname: destinations
+  field_type: string
+  name: Destinations
+  description: Only show trains whose destination contains one of these comma-separated words. Empty = all.
+  optional: true
+  placeholder: Paris, Aéroport
+- keyname: max_trains
+  field_type: number
+  name: Number of trains
+  description: Maximum number of trains on the full screen (1 to 12).
+  help_text: Smaller layouts cap this on their own - horizontal half 5, vertical half 8, quadrant 4 - and hide rows that do not fit.
+  default: 8
+  min: 1
+  max: 12
+  optional: true
+- keyname: language
+  field_type: select
+  name: Language
+  description: Language of the on-screen labels. Auto follows your TRMNL account language.
+  options:
+  - Auto: auto
+  - English: en
+  - Français: fr
+  default: auto
+name: Île-de-France Next Trains
+description: Next trains, Île-de-France (IDFM)
+refresh_interval: 15

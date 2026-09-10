@@ -1,0 +1,51 @@
+{%- comment -%}
+  Full screen (800x480): complete table, departure time first.
+  In portrait orientation the screen is narrower, so the mission and train-length columns are hidden.
+{%- endcomment -%}
+{%- if error != "" or rows.size == 0 -%}{%- assign layout_mods = "layout--center" -%}{%- else -%}{%- assign layout_mods = "layout--top layout--stretch-x" -%}{%- endif -%}
+<div class="layout layout--col {{ layout_mods }}">
+{%- if error != "" -%}
+  <span class="title title--small">{{ t_unavailable }}</span>
+  <span class="label label--small">{{ error }}</span>
+{%- elsif rows.size == 0 -%}
+  <span class="title title--small">{{ t_no_trains }}</span>
+  <span class="label label--small">{{ t_no_departures }}</span>
+{%- else -%}
+  <table class="table" data-table-limit="true">
+    <thead>
+      <tr>
+        <th><span class="title title--small">{{ t_time }}</span></th>
+        <th class="w--12"><span class="title title--small">{{ t_line }}</span></th>
+        <th><span class="title title--small">{{ t_destination }}</span></th>
+        {%- if has_mission -%}<th class="portrait:hidden"><span class="title title--small">{{ t_mission }}</span></th>{%- endif -%}
+        {%- if has_platform -%}<th class="w--20"><span class="title title--small">{{ t_platform }}</span></th>{%- endif -%}
+        {%- if has_length -%}<th class="portrait:hidden"><span class="title title--small">{{ t_train }}</span></th>{%- endif -%}
+        <th><span class="title title--small">{{ t_status }}</span></th>
+      </tr>
+    </thead>
+    <tbody>
+      {%- for row in rows limit: max_trains -%}
+        {%- assign r = row | split: "|" -%}
+        <tr>
+          <td><span class="value value--xsmall value--tnums">{{ r[2] }}</span></td>
+          <td class="w--12"><span class="label label--filled">{{ r[3] }}</span></td>
+          <td><span class="label">{{ r[4] }}</span></td>
+          {%- if has_mission -%}<td class="portrait:hidden"><span class="label label--small">{{ r[5] }}</span></td>{%- endif -%}
+          {%- if has_platform -%}<td class="w--20"><span class="label">{{ r[6] }}</span></td>{%- endif -%}
+          {%- if has_length -%}<td class="portrait:hidden"><span class="label label--small">{%- if r[9] == "short" -%}{{ t_short }}{%- elsif r[9] == "long" -%}{{ t_long }}{%- endif -%}</span></td>{%- endif -%}
+          <td>
+            {%- case r[8] -%}
+              {%- when "cancelled" -%}<span class="label label--small label--filled">{{ t_cancelled }}</span>
+              {%- when "delayed" -%}<span class="label label--small label--filled">+{{ r[7] }} min</span>
+              {%- when "atstop" -%}<span class="label label--small">{{ t_at_platform }}</span>
+              {%- else -%}<span class="label label--small">{{ t_on_time }}</span>
+            {%- endcase -%}
+          </td>
+        </tr>
+      {%- endfor -%}
+    </tbody>
+  </table>
+{%- endif -%}
+</div>
+
+{% render 'title_bar', title: station_title, instance: title_instance %}
