@@ -17,7 +17,7 @@
         <th><span class="title title--small">{{ t_time }}</span></th>
         <th class="w--12"><span class="title title--small">{{ t_line }}</span></th>
         <th><span class="title title--small">{{ t_destination }}</span></th>
-        {%- if has_mission -%}<th class="portrait:hidden"><span class="title title--small">{{ t_mission }}</span></th>{%- endif -%}
+        {%- if has_mission -%}<th class="w--20 portrait:hidden"><span class="title title--small">{{ t_mission }}</span></th>{%- endif -%}
         {%- if has_platform -%}<th class="w--20"><span class="title title--small">{{ t_platform }}</span></th>{%- endif -%}
         {%- if has_length -%}<th class="w--16 portrait:hidden"><span class="title title--small">{{ t_train }}</span></th>{%- endif -%}
         <th><span class="title title--small">{{ t_status }}</span></th>
@@ -30,15 +30,15 @@
           <td><span class="value value--xsmall value--tnums">{{ r[2] }}</span></td>
           <td class="w--12"><span class="label label--filled">{{ r[3] }}</span></td>
           <td><span class="label">{{ r[4] }}</span></td>
-          {%- if has_mission -%}<td class="portrait:hidden"><span class="label">{{ r[5] }}</span></td>{%- endif -%}
+          {%- if has_mission -%}<td class="w--20 portrait:hidden"><span class="label">{{ r[5] }}</span></td>{%- endif -%}
           {%- if has_platform -%}<td class="w--20"><span class="label">{{ r[6] }}</span></td>{%- endif -%}
           {%- if has_length -%}<td class="w--16 portrait:hidden"><span class="label">{%- if r[9] == "short" -%}{{ t_short }}{%- elsif r[9] == "long" -%}{{ t_long }}{%- endif -%}</span></td>{%- endif -%}
           <td>
             {%- case r[8] -%}
-              {%- when "cancelled" -%}<span class="label label--filled">{{ t_cancelled }}</span>
-              {%- when "delayed" -%}<span class="label label--filled">+{{ r[7] }} min</span>
-              {%- when "atstop" -%}<span class="label">{{ t_at_platform }}</span>
-              {%- else -%}<span class="label">{{ t_on_time }}</span>
+              {%- when "cancelled" -%}<span class="label label--filled portrait:label--small">{{ t_cancelled }}</span>
+              {%- when "delayed" -%}<span class="label label--filled portrait:label--small">+{{ r[7] }} min</span>
+              {%- when "atstop" -%}<span class="label portrait:label--small">{{ t_at_platform }}</span>
+              {%- else -%}<span class="label portrait:label--small">{{ t_on_time }}</span>
             {%- endcase -%}
           </td>
         </tr>
