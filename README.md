@@ -4,7 +4,7 @@ A [TRMNL](https://trmnl.com) e-ink plugin showing the next trains at any Île-de
 
 For each train: departure time, line, destination, mission code (SNCF), platform, train length (long or short) and status (on time, delay, cancelled, at platform). Times are shown rather than a countdown, because the screen stays frozen between two refreshes and only the time stays right.
 
-All four TRMNL screen formats are supported (full, both halves, quadrant for mashups). On-screen labels are available in English and French, auto-detected from the TRMNL account language or forced in the settings.
+All four TRMNL screen formats are supported (full, both halves, quadrant for mashups), with larger text and rows on TRMNL X. On-screen labels are available in English and French, auto-detected from the TRMNL account language or forced in the settings.
 
 ## Prerequisites
 

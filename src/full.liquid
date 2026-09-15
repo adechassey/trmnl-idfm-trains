@@ -1,7 +1,12 @@
 {%- comment -%}
   Full screen (800x480): complete table, departure time first.
   In portrait orientation the screen is narrower, so the mission and train-length columns are hidden.
+  Large screens (lg:, TRMNL X) get bigger text and taller rows; with more than 10 rows the rows keep
+  the base height so that 12 trains still fit in landscape.
 {%- endcomment -%}
+{%- assign shown = rows.size -%}
+{%- if shown > max_trains -%}{%- assign shown = max_trains -%}{%- endif -%}
+{%- if shown > 10 -%}{%- assign table_mods = "lg:table--base" -%}{%- else -%}{%- assign table_mods = "lg:table--large" -%}{%- endif -%}
 {%- if error != "" or rows.size == 0 -%}{%- assign layout_mods = "layout--center" -%}{%- else -%}{%- assign layout_mods = "layout--top layout--stretch-x" -%}{%- endif -%}
 <div class="layout layout--col {{ layout_mods }}">
 {%- if error != "" -%}
@@ -11,7 +16,7 @@
   <span class="title title--small">{{ t_no_trains }}</span>
   <span class="label label--small">{{ t_no_departures }}</span>
 {%- else -%}
-  <table class="table" data-table-limit="true">
+  <table class="table {{ table_mods }}" data-table-limit="true">
     <thead>
       <tr>
         <th><span class="title title--small">{{ t_time }}</span></th>
@@ -27,18 +32,18 @@
       {%- for row in rows limit: max_trains -%}
         {%- assign r = row | split: "|" -%}
         <tr>
-          <td><span class="value value--xsmall value--tnums">{{ r[2] }}</span></td>
-          <td class="w--12"><span class="label label--filled">{{ r[3] }}</span></td>
-          <td><span class="label">{{ r[4] }}</span></td>
-          {%- if has_mission -%}<td class="w--20 portrait:hidden"><span class="label">{{ r[5] }}</span></td>{%- endif -%}
-          {%- if has_platform -%}<td class="w--20"><span class="label">{{ r[6] }}</span></td>{%- endif -%}
-          {%- if has_length -%}<td class="w--16 portrait:hidden"><span class="label">{%- if r[9] == "short" -%}{{ t_short }}{%- elsif r[9] == "long" -%}{{ t_long }}{%- endif -%}</span></td>{%- endif -%}
+          <td><span class="value value--xsmall value--tnums lg:value--small">{{ r[2] }}</span></td>
+          <td class="w--12"><span class="label label--filled lg:label--large">{{ r[3] }}</span></td>
+          <td><span class="label lg:label--large">{{ r[4] }}</span></td>
+          {%- if has_mission -%}<td class="w--20 portrait:hidden"><span class="label lg:label--large">{{ r[5] }}</span></td>{%- endif -%}
+          {%- if has_platform -%}<td class="w--20"><span class="label lg:label--large">{{ r[6] }}</span></td>{%- endif -%}
+          {%- if has_length -%}<td class="w--16 portrait:hidden"><span class="label lg:label--large">{%- if r[9] == "short" -%}{{ t_short }}{%- elsif r[9] == "long" -%}{{ t_long }}{%- endif -%}</span></td>{%- endif -%}
           <td>
             {%- case r[8] -%}
-              {%- when "cancelled" -%}<span class="label label--filled portrait:label--small">{{ t_cancelled }}</span>
-              {%- when "delayed" -%}<span class="label label--filled portrait:label--small">+{{ r[7] }} min</span>
-              {%- when "atstop" -%}<span class="label portrait:label--small">{{ t_at_platform }}</span>
-              {%- else -%}<span class="label portrait:label--small">{{ t_on_time }}</span>
+              {%- when "cancelled" -%}<span class="label label--filled portrait:label--small lg:label--large">{{ t_cancelled }}</span>
+              {%- when "delayed" -%}<span class="label label--filled portrait:label--small lg:label--large">+{{ r[7] }} min</span>
+              {%- when "atstop" -%}<span class="label portrait:label--small lg:label--large">{{ t_at_platform }}</span>
+              {%- else -%}<span class="label portrait:label--small lg:label--large">{{ t_on_time }}</span>
             {%- endcase -%}
           </td>
         </tr>

@@ -1,6 +1,7 @@
 {%- comment -%}
   Horizontal half (800x240): compact table, 5 trains max.
   In portrait orientation the mission column is hidden.
+  Large screens (lg:, TRMNL X): base row height, bigger time and destination.
 {%- endcomment -%}
 {%- assign n = max_trains -%}
 {%- if n > 5 -%}{%- assign n = 5 -%}{%- endif -%}
@@ -13,7 +14,7 @@
 {%- elsif rows.size == 0 -%}
   <span class="title title--small">{{ t_no_trains }}</span>
 {%- else -%}
-  <table class="table table--small" data-table-limit="true">
+  <table class="table table--small lg:table--base" data-table-limit="true">
     <thead>
       <tr>
         <th><span class="title title--small">{{ t_time }}</span></th>
@@ -28,9 +29,9 @@
       {%- for row in rows limit: n -%}
         {%- assign r = row | split: "|" -%}
         <tr>
-          <td><span class="label">{{ r[2] }}</span></td>
-          <td class="w--12"><span class="label label--small label--filled">{{ r[3] }}</span></td>
-          <td><span class="label label--small lg:label--base">{{ r[10] }}</span></td>
+          <td><span class="label lg:label--large">{{ r[2] }}</span></td>
+          <td class="w--12"><span class="label label--small label--filled lg:label--base">{{ r[3] }}</span></td>
+          <td><span class="label label--small lg:label--large">{{ r[10] }}</span></td>
           {%- if has_mission -%}<td class="portrait:hidden"><span class="label label--small lg:label--base">{{ r[5] }}</span></td>{%- endif -%}
           {%- if has_platform -%}<td class="w--20"><span class="label label--small lg:label--base">{{ r[6] }}</span></td>{%- endif -%}
           <td>

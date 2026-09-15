@@ -80,7 +80,7 @@ custom_fields:
   name: Number of trains
   description: Maximum number of trains on the full screen (1 to 12).
   description-fr: Nombre maximum de trains sur l'écran complet (1 à 12).
-  help_text: Smaller layouts cap this on their own - horizontal half 5, vertical half 8, quadrant 4 - and hide rows that do not fit.
+  help_text: Smaller layouts cap this on their own - horizontal half 5, vertical half 8, quadrant 4 (8 on TRMNL X) - and hide rows that do not fit.
   default: 8
   min: 1
   max: 12
