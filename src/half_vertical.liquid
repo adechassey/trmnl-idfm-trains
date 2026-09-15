@@ -35,18 +35,18 @@
             {%- elsif r[8] == "delayed" -%}
               <span class="label label--filled">{{ r[2] }}</span>
             {%- else -%}
-              <span class="label">{{ r[2] }}</span>
+              <span class="label lg:label--large">{{ r[2] }}</span>
             {%- endif -%}
           </td>
           <td class="w--10"><span class="label label--small label--filled">{{ r[3] }}</span></td>
-          <td><span class="label label--small lg:label--base">{{ r[10] }}</span></td>
+          <td><span class="label label--small lg:label--large">{{ r[10] }}</span></td>
           <td class="w--24 portrait:hidden">
             {%- case r[8] -%}
-              {%- when "cancelled" -%}<span class="label label--small label--filled">{{ t_cancelled }}</span>
-              {%- when "delayed" -%}<span class="label label--small label--filled">+{{ r[7] }} min</span>
-              {%- when "atstop" -%}<span class="label label--small">{{ t_at_platform }}</span>
+              {%- when "cancelled" -%}<span class="label label--small lg:label--base label--filled">{{ t_cancelled }}</span>
+              {%- when "delayed" -%}<span class="label label--small lg:label--base label--filled">+{{ r[7] }} min</span>
+              {%- when "atstop" -%}<span class="label label--small lg:label--base">{{ t_at_platform }}</span>
               {%- else -%}
-                {%- if r[6] != blank -%}<span class="label label--small">{{ t_platform_n }} {{ r[6] }}</span>{%- else -%}<span class="label label--small">{{ t_on_time }}</span>{%- endif -%}
+                {%- if r[6] != blank -%}<span class="label label--small lg:label--base">{{ t_platform_n }} {{ r[6] }}</span>{%- else -%}<span class="label label--small">{{ t_on_time }}</span>{%- endif -%}
             {%- endcase -%}
           </td>
         </tr>
